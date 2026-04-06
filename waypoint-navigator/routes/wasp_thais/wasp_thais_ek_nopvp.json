@@ -15,6 +15,7 @@
   "walkable_overrides": [
     {"x_min": 32350, "x_max": 32350, "y_min": 32246, "y_max": 32246, "z": 6},
     {"x_min": 32430, "x_max": 32430, "y_min": 32302, "y_max": 32302, "z": 8},
+    {"x_min": 32424, "x_max": 32445, "y_min": 32294, "y_max": 32326, "z": 8},
     {"x_min": 32444, "x_max": 32444, "y_min": 32295, "y_max": 32295, "z": 9}
   ],
   "session": {
