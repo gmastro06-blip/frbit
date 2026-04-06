@@ -314,6 +314,13 @@ class MinimapRadar:
         # blocking callers and log a warning.
         self._consecutive_failures: int = 0
         self._CB_THRESHOLD: int = 5
+        # Persistent executor for palette_match timeout wrapper — reusing
+        # avoids ~0.14 ms thread-pool creation overhead on every read() call.
+        self._match_executor = concurrent.futures.ThreadPoolExecutor(max_workers=1)
+
+    def shutdown(self) -> None:
+        """Release the persistent match executor. Call on bot stop."""
+        self._match_executor.shutdown(wait=False)
 
     # ── Propiedad de acceso rápido ──────────────────────────────────────────
     @property
@@ -459,9 +466,8 @@ class MinimapRadar:
             return self._palette_match(q_floor, q_tpl, mask)
 
         try:
-            with concurrent.futures.ThreadPoolExecutor(max_workers=1) as _ex:
-                _fut = _ex.submit(_do_match)
-                best_val, best_loc, off_px, off_py = _fut.result(timeout=2.0)
+            _fut = self._match_executor.submit(_do_match)
+            best_val, best_loc, off_px, off_py = _fut.result(timeout=2.0)
         except concurrent.futures.TimeoutError:
             _log.warning("minimap: palette_match excedió timeout de 2.0 s — tick descartado")
             with self._lock:
