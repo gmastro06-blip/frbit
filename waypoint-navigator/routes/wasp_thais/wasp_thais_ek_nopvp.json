@@ -12,6 +12,11 @@
       "z": 8
     }
   },
+  "walkable_overrides": [
+    {"x_min": 32350, "x_max": 32350, "y_min": 32246, "y_max": 32246, "z": 6},
+    {"x_min": 32430, "x_max": 32430, "y_min": 32302, "y_max": 32302, "z": 8},
+    {"x_min": 32444, "x_max": 32444, "y_min": 32295, "y_max": 32295, "z": 9}
+  ],
   "session": {
     "input_method": "mouse",
     "loop_route": false,
@@ -276,7 +281,13 @@
     },
     {
       "kind": "action",
-      "action": "sell"
+      "action": "sell",
+      "items": [
+        {
+          "name": "vial",
+          "qty": 0
+        }
+      ]
     },
     {
       "kind": "action",
@@ -571,6 +582,10 @@
     {
       "kind": "action",
       "action": "check"
+    },
+    {
+      "kind": "goto",
+      "label": "hunt"
     },
     {
       "kind": "label",
