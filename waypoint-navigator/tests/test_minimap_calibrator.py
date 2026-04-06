@@ -529,8 +529,8 @@ class TestEnsureMinimapZoom:
 
     @patch("src.minimap_calibrator.MinimapCalibrator.calibrate")
     def test_zoom_already_ok_no_correction(self, mock_cal: MagicMock) -> None:
-        """If tw is in range [30, 60], no keys should be pressed."""
-        cfg = MinimapConfig(tiles_wide=40)
+        """If tw is in range [100, 120], no keys should be pressed."""
+        cfg = MinimapConfig(tiles_wide=110)
         ok = CalibrationResult(success=True, config=cfg, best_score=0.9)
         mock_cal.return_value = ok
 
@@ -546,9 +546,9 @@ class TestEnsureMinimapZoom:
     def test_zoom_too_low_presses_O(
         self, mock_sleep: MagicMock, mock_cal: MagicMock
     ) -> None:
-        """tw < 30 should press O (zoom out), then succeed."""
+        """tw < 100 should press O (zoom out), then succeed."""
         cfg_low = MinimapConfig(tiles_wide=20)
-        cfg_ok = MinimapConfig(tiles_wide=40)
+        cfg_ok = MinimapConfig(tiles_wide=110)
         low = CalibrationResult(success=True, config=cfg_low, best_score=0.9)
         ok = CalibrationResult(success=True, config=cfg_ok, best_score=0.9)
         mock_cal.side_effect = [low, ok]
@@ -565,9 +565,9 @@ class TestEnsureMinimapZoom:
     def test_zoom_too_high_presses_I(
         self, mock_sleep: MagicMock, mock_cal: MagicMock
     ) -> None:
-        """tw > 60 should press I (zoom in)."""
-        cfg_high = MinimapConfig(tiles_wide=80)
-        cfg_ok = MinimapConfig(tiles_wide=40)
+        """tw > 120 should press I (zoom in)."""
+        cfg_high = MinimapConfig(tiles_wide=130)
+        cfg_ok = MinimapConfig(tiles_wide=110)
         high = CalibrationResult(success=True, config=cfg_high, best_score=0.9)
         ok = CalibrationResult(success=True, config=cfg_ok, best_score=0.9)
         mock_cal.side_effect = [high, ok]

@@ -277,7 +277,8 @@ class TestRead_CoordConversion:
 
 class TestReadJumpRejection:
     def test_rejects_moderate_manhattan_jump_while_tracking(self):
-        radar = _make_radar(_fake_floor_map(), cfg=MinimapConfig(confidence=0.0, max_jump_tiles=10))
+        # max_jump_tiles=4 → jump_limit=min(4,10)=4; candidate jump manhattan=5 > 4 → rejected
+        radar = _make_radar(_fake_floor_map(), cfg=MinimapConfig(confidence=0.0, max_jump_tiles=4))
         radar._last_coord = Coordinate(BOUNDS["xMin"] + 10, BOUNDS["yMin"] + 10, 7)
         radar._hit_count = 3
 
@@ -292,7 +293,8 @@ class TestReadJumpRejection:
         assert radar._jump_rejects == 1
 
     def test_rejects_tracking_drift_far_from_hint(self):
-        radar = _make_radar(_fake_floor_map(), cfg=MinimapConfig(confidence=0.0, max_jump_tiles=10))
+        # max_jump_tiles=8 → hint_jump_limit=min(8,10)=8; hint_dx=9 > 8 → rejected
+        radar = _make_radar(_fake_floor_map(), cfg=MinimapConfig(confidence=0.0, max_jump_tiles=8))
         radar._last_coord = Coordinate(BOUNDS["xMin"] + 42, BOUNDS["yMin"] + 20, 7)
         radar._hit_count = 3
         hint = Coordinate(BOUNDS["xMin"] + 50, BOUNDS["yMin"] + 20, 7)
