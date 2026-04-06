@@ -49,7 +49,10 @@
       "Bash(sort find:*)",
       "Bash(head -30 find C:/Users/gmast/Documents/frbit/waypoint-navigator/tools -name *.py)",
       "Bash(grep \"\\\\.py$\")",
-      "Bash(grep -E \"test_.*\\\\.py$\")"
+      "Bash(grep -E \"test_.*\\\\.py$\")",
+      "Bash(gh repo:*)",
+      "Bash(gh auth:*)",
+      "Bash(gh api:*)"
     ]
   }
 }
