@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\src\frame_capture.py
+# hypothesis_version: 6.151.9
+
+[0.008, 0.02, 0.07, 0.15, 0.35, 0.65, 0.7, 1.4, 3.0, 10.0, 131072, '-', '-an', '-c:v', '-f', '-framerate', '-i', '-preset', '-tune', '-y', 'ArraySize', 'BGR', 'BindFlags', 'CPUAccessFlags', 'Count', 'D1', 'D2', 'D3', 'D4', 'DepthPitch', 'Format', 'Height', 'MipLevels', 'MiscFlags', 'Quality', 'RowPitch', 'SampleDesc', 'Usage', 'Width', 'biBitCount', 'biClrImportant', 'biClrUsed', 'biCompression', 'biHeight', 'biPlanes', 'biSize', 'biSizeImage', 'biWidth', 'biXPelsPerMeter', 'biYPelsPerMeter', 'bottom', 'close', 'dxcam', 'ffmpeg', 'flv', 'gdigrab', 'height', 'left', 'libx264', 'mss', 'obs', 'pData', 'printwindow', 'right', 'rtmp', 'top', 'ultrafast', 'virtualcam', 'wgc', 'width', 'wn.fc', 'zerolatency', '{}']

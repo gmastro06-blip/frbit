@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\tools\route_validator.py
+# hypothesis_version: 6.151.9
+
+[30000, 35000, '\x1b[0m', '\x1b[91m', '\x1b[92m', '\x1b[93m', '*.json', '--all', '?', 'Route JSON validator', '__main__', 'action', 'bank_deposit', 'bank_withdraw', 'buy', 'cast', 'deposit', 'goto', 'hotkey', 'if_stat', 'items', 'label', 'login', 'logout', 'move', 'npc_trade', 'r', 'routes', 'say', 'script', 'script instructions', 'sell', 'store_true', 'talk_npc', 'target', 'trade', 'use_item', 'utf-8', 'wait', 'walk', 'waypoints', 'x', 'y', 'z']

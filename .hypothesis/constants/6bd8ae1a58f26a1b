@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\src\frame_quality.py
+# hypothesis_version: 6.151.9
+
+[5.0, 50.0, 'height', 'is_black', 'is_blurry', 'is_corrupt', 'is_valid_resolution', 'laplacian_variance', 'mean_brightness', 'quality', 'width']

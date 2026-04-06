@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\src\pathfinder.py
+# hypothesis_version: 6.151.9
+
+[0.0, 0.15, 1.0, 2000000, 'Route', 'allow_diagonal', 'density', 'max_nodes', 'total_tiles', 'walkable_tiles']

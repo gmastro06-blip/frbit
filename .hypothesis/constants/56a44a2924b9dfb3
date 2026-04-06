@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\human_input_system\config\models.py
+# hypothesis_version: 6.151.9
+
+[0.0, 0.01, 0.05, 0.1, 0.2, 0.3, 0.4, 0.5, 1.0, 1.5, 5.0, 8.0, 15.0, 25.0, 30.0, 40.0, 80.0, 200.0, 220.0, 300.0, 2000.0, 100, 200, 500, 115200, './logs', 'BehaviorProfile', 'behavior', 'custom', 'default', 'description', 'double_press', 'hesitation', 'miss_click', 'mouse', 'name', 'timing', 'wrong_key']

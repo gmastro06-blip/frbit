@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\src\telemetry.py
+# hypothesis_version: 6.151.9
+
+[0.0, 1.0, '%Y-%m-%dT%H:%M:%S', '.tmp', 'TelemetrySession', 'deaths', 'depot_cycles', 'duration_s', 'end_ts', 'errors', 'items_looted', 'kills', 'msg', 'recalib_count', 'route_name', 'session_id', 'start_ts', 'steps_failed', 'steps_walked', 'stuck_count', 'ts', 'utf-8', 'w', 'wn.tl']

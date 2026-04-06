@@ -1,0 +1,4 @@
+# file: C:\Users\gmast\Documents\frbit\review_system\error_detector.py
+# hypothesis_version: 6.151.9
+
+[300, '--msg-template', '--no-color-output', '-f', '-r', 'C', 'CRITICAL', 'E', 'F', 'HIGH', 'N', 'W', 'bandit', 'custom', 'flake8', 'mypy', 'pylint', 'replace', 'syntax', 'utf-8']

@@ -1,0 +1,9 @@
+{
+  "condition_icons_roi": [792, 60, 110, 15],
+  "detection_mode": "template",
+  "confidence": 0.72,
+  "check_interval": 0.5,
+  "ref_width": 1920,
+  "ref_height": 1080,
+  "reactions": []
+}

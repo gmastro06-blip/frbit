@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\src\combat_manager.py
+# hypothesis_version: 6.151.9
+
+[0.0, 0.1, 0.12, 0.25, 0.3, 0.35, 0.4, 0.5, 0.65, 1.0, 1.5, 2.0, 3.0, 100, 200, 210, 255, 400, 480, 1080, 1699, 1920, '*.bmp', '*.jpeg', '*.jpg', '*.png', 'CombatConfig', 'OCR read failed: %s', "[^a-zA-Z0-9 ']", '_cached_mp_pct', '_last_attack_vk_time', 'action', 'active_cooldowns', 'aoe', 'attack_vk', 'attacks', 'battle', 'battle list', 'battlelist', 'cooldown', 'current_target', 'e1', 'e25', 'e26', 'en', 'flee', 'flee_vk', 'frozen', 'hp_pct', 'ignore', 'in_combat', 'kills', 'label', 'left', 'loot', 'lure_warnings', 'max_expected', 'min_mp', 'mob_count', 'mobs_visible', 'monsters', 'name', 'paused', 'prey', 'quest', 'single_target', 'skills', 'spells', 'stop', 'target_verify_fails', 'taunt', 'type', 'unjustified', 'utf-8', 'vip', 'vk', 'w', 'warn', 'wn.cm']

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WaypointNavigator Dashboard</title>
+<style>
+  :root {
+    --bg: #1a1a2e;
+    --card: #16213e;
+    --accent: #0f3460;
+    --highlight: #e94560;
+    --text: #eee;
+    --text2: #aab;
+    --green: #4ade80;
+    --yellow: #facc15;
+    --red: #f87171;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    min-height: 100vh;
+  }
+  header {
+    background: var(--accent);
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--highlight);
+  }
+  header h1 { font-size: 1.3rem; font-weight: 600; }
+  #ws-status {
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+  }
+  .connected { background: var(--green); color: #000; }
+  .disconnected { background: var(--red); color: #fff; }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 16px;
+    padding: 20px 24px;
+  }
+  .card {
+    background: var(--card);
+    border-radius: 10px;
+    padding: 18px;
+    border: 1px solid #2a2a4a;
+  }
+  .card h3 {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: var(--text2);
+    margin-bottom: 8px;
+    letter-spacing: 0.5px;
+  }
+  .card .value {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .card .sub {
+    font-size: 0.8rem;
+    color: var(--text2);
+    margin-top: 4px;
+  }
+
+  .wide { grid-column: 1 / -1; }
+
+  #log-panel {
+    background: #0d0d1a;
+    border-radius: 10px;
+    margin: 0 24px 20px;
+    padding: 16px;
+    max-height: 320px;
+    overflow-y: auto;
+    font-family: 'Cascadia Code', 'Fira Code', monospace;
+    font-size: 0.78rem;
+    line-height: 1.6;
+    border: 1px solid #2a2a4a;
+  }
+  #log-panel .line {
+    color: var(--text2);
+    white-space: pre-wrap;
+    word-break: break-all;
+  }
+  #log-panel .line.event {
+    color: var(--yellow);
+  }
+  #log-panel .line.error {
+    color: var(--red);
+  }
+
+  #events-panel {
+    margin: 0 24px 20px;
+  }
+  .event-tag {
+    display: inline-block;
+    padding: 3px 10px;
+    margin: 3px;
+    border-radius: 6px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    background: var(--accent);
+    border: 1px solid #3a5a8a;
+  }
+
+  footer {
+    text-align: center;
+    padding: 12px;
+    color: var(--text2);
+    font-size: 0.7rem;
+  }
+  #s-pos { font-size: 1.2rem; }
+  #s-lastupdate { font-size: 1rem; }
+  #events-panel > h3 {
+    color: var(--text2);
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+    padding-left: 4px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>🗺️ WaypointNavigator Dashboard</h1>
+  <span id="ws-status" class="disconnected">Disconnected</span>
+</header>
+
+<div class="grid" id="stats-grid">
+  <div class="card">
+    <h3>Routes Completed</h3>
+    <div class="value" id="s-routes">—</div>
+  </div>
+  <div class="card">
+    <h3>Heals Fired</h3>
+    <div class="value" id="s-heals">—</div>
+  </div>
+  <div class="card">
+    <h3>Mana Fired</h3>
+    <div class="value" id="s-mana">—</div>
+  </div>
+  <div class="card">
+    <h3>Loot Events</h3>
+    <div class="value" id="s-loot">—</div>
+  </div>
+  <div class="card">
+    <h3>Uptime</h3>
+    <div class="value" id="s-uptime">—</div>
+    <div class="sub" id="s-uptime-sub"></div>
+  </div>
+  <div class="card">
+    <h3>Position</h3>
+    <div class="value" id="s-pos">—</div>
+  </div>
+  <div class="card">
+    <h3>WS Clients</h3>
+    <div class="value" id="s-clients">0</div>
+  </div>
+  <div class="card">
+    <h3>Last Update</h3>
+    <div class="value" id="s-lastupdate">—</div>
+  </div>
+</div>
+
+<div id="events-panel">
+  <h3>
+    RECENT EVENTS
+  </h3>
+  <div id="events-container"></div>
+</div>
+
+<div id="log-panel"></div>
+
+<footer>
+  WaypointNavigator Dashboard &mdash; F7.7
+</footer>
+
+<script>
+  const WS_PLACEHOLDER = "__WS_URL__";
+  const WS_FALLBACK_PORT = location.port ? parseInt(location.port, 10) + 1 : 8765;
+  const WS_URL = (WS_PLACEHOLDER.startsWith('ws://') || WS_PLACEHOLDER.startsWith('wss://'))
+    ? WS_PLACEHOLDER
+    : `ws://${location.hostname}:${WS_FALLBACK_PORT}`;
+
+  const statusEl   = document.getElementById('ws-status');
+  const logPanel   = document.getElementById('log-panel');
+  const eventsDiv  = document.getElementById('events-container');
+
+  let ws = null;
+  let reconnectTimer = null;
+  let lastLogSignature = '';
+
+  function connect() {
+    ws = new WebSocket(WS_URL);
+    ws.onopen = () => {
+      statusEl.textContent = 'Connected';
+      statusEl.className = 'connected';
+    };
+    ws.onclose = () => {
+      statusEl.textContent = 'Disconnected';
+      statusEl.className = 'disconnected';
+      if (!reconnectTimer) {
+        reconnectTimer = setTimeout(() => { reconnectTimer = null; connect(); }, 3000);
+      }
+    };
+    ws.onerror = () => {};
+    ws.onmessage = (evt) => {
+      try {
+        const msg = JSON.parse(evt.data);
+        if (msg.type === 'pong') return;
+        updateStats(msg.stats || {});
+        updateLogs(msg.logs || []);
+        updateEvents(msg.events || []);
+        document.getElementById('s-clients').textContent = msg.clients || 0;
+        document.getElementById('s-lastupdate').textContent =
+          new Date(msg.ts * 1000).toLocaleTimeString();
+      } catch(e) {}
+    };
+  }
+
+  function updateStats(s) {
+    document.getElementById('s-routes').textContent = s.routes_completed ?? '—';
+    document.getElementById('s-heals').textContent  = s.heal_fired ?? '—';
+    document.getElementById('s-mana').textContent   = s.mana_fired ?? '—';
+    document.getElementById('s-loot').textContent   = s.loot_events ?? '—';
+
+    if (s.uptime_seconds != null) {
+      const secs = Math.floor(s.uptime_seconds);
+      const h = Math.floor(secs / 3600);
+      const m = Math.floor((secs % 3600) / 60);
+      const sec = secs % 60;
+      document.getElementById('s-uptime').textContent =
+        `${h}h ${String(m).padStart(2,'0')}m`;
+      document.getElementById('s-uptime-sub').textContent =
+        `${secs.toLocaleString()}s total`;
+    }
+
+    if (s.position) {
+      const p = s.position;
+      document.getElementById('s-pos').textContent =
+        `${p.x ?? '?'}, ${p.y ?? '?'}, ${p.z ?? '?'}`;
+    }
+  }
+
+  function updateLogs(logs) {
+    if (!logs.length) return;
+    const recentLogs = logs.slice(-200);
+    const signature = recentLogs.join('\n');
+    if (signature === lastLogSignature) return;
+    lastLogSignature = signature;
+
+    logPanel.innerHTML = '';
+    for (const line of recentLogs) {
+      const div = document.createElement('div');
+      div.className = 'line';
+      if (line.includes('[!]') || line.includes('Error')) div.className += ' error';
+      else if (line.includes('[EVENT]') || line.includes('✓')) div.className += ' event';
+      div.textContent = line;
+      logPanel.appendChild(div);
+    }
+    logPanel.scrollTop = logPanel.scrollHeight;
+  }
+
+  function updateEvents(events) {
+    if (!events.length) return;
+    eventsDiv.innerHTML = '';
+    for (const ev of events.slice(-15)) {
+      const tag = document.createElement('span');
+      tag.className = 'event-tag';
+      tag.textContent = ev.event;
+      tag.title = JSON.stringify(ev.data || {});
+      eventsDiv.appendChild(tag);
+    }
+  }
+
+  // Ping to keep alive
+  setInterval(() => {
+    if (ws && ws.readyState === WebSocket.OPEN) {
+      ws.send(JSON.stringify({type: 'ping'}));
+    }
+  }, 15000);
+
+  connect();
+</script>
+</body>
+</html>

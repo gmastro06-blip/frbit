@@ -1,0 +1,41 @@
+{
+  "_comment": "Trade window coordinates — calibrate with _diag_trade_calibrate.py",
+  "ref_width": 1920,
+  "ref_height": 1080,
+  "use_search_field": true,
+
+  "window_roi":     [610, 280, 700, 500],
+  "item_list_roi":  [620, 320, 460, 350],
+  "qty_field_roi":  [667, 506, 120, 28],
+  "price_unit_roi": [900, 658, 190, 26],
+
+  "buy_tab_pos":      [752, 183],
+  "sell_tab_pos":     [797, 183],
+  "search_field_pos": [667, 463],
+  "first_item_pos":   [592, 220],
+  "ok_btn_pos":       [752, 550],
+
+  "buy_btn_pos":    [752, 550],
+  "sell_btn_pos":   [797, 550],
+  "cancel_btn_pos": [1087, 736],
+  "scroll_pos":     [592, 350],
+
+  "confidence": 0.62,
+  "click_delay": 0.15,
+  "greet_delay": 1.2,
+  "window_timeout": 5.0,
+  "scroll_steps": 3,
+
+  "window_header_color_hsv": [20, 100, 150],
+  "window_min_pixels": 40,
+
+  "use_balance": true,
+  "balance_checkbox_pos": [729, 544],
+
+  "buy_list": [
+    {"name": "health potion", "quantity": 50, "max_price": 60, "item_pos": [652, 294]}
+  ],
+  "sell_list": [
+    {"name": "vial", "quantity": 200, "item_pos": [48, 207]}
+  ]
+}

@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\src\session_stats.py
+# hypothesis_version: 6.151.9
+
+[0.0, 30.0, 3600.0, 'active', 'deaths', 'e1', 'e2', 'e3', 'e4', 'e5', 'elapsed_h', 'elapsed_s', 'exp', 'exp_per_hour', 'heals_used', 'items', 'kills_by_monster', 'kills_per_hour', 'loot_gp_per_hour', 'name', 'spells_cast', 'total_exp', 'total_kills', 'total_loot_gp', 'value_gp', 'wn.ss']

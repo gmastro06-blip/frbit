@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\tools\convert_cloudbot.py
+# hypothesis_version: 6.151.9
+
+['#', '(', ')', '--batch', '--label', '--output', '--split-labels', '-o', 'No output written.', '__main__', 'action', 'all', 'cloudbot', 'convert_cloudbot', 'door', 'input', 'label', 'ladder', 'name', 'node', 'replace', 'rope', 'source', 'source_script', 'stand', 'start', 'store_true', 'unnamed', 'utf-8', 'walk', 'waypoints', 'waypoints.in', 'waypoints.json', 'x', 'y', 'z']

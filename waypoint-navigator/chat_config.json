@@ -1,0 +1,13 @@
+{
+  "_comment": "Chat ROI configuration - calibrated from manual ROI capture tool",
+  "chat_roi": [
+    2,
+    898,
+    1550,
+    132
+  ],
+  "ref_width": 1920,
+  "ref_height": 1080,
+  "scan_interval": 0.5,
+  "confidence": 0.6
+}

@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\src\frame_cache.py
+# hypothesis_version: 6.151.9
+
+[0.0, 2.0, 50.0, 1000.0, 4096, '_diff_threshold', '_frame', '_frame_changed', '_getter', '_lock', '_prev_hash', '_ts', '_ttl_s']

@@ -1,0 +1,536 @@
+[
+  {
+    "entry": {
+      "x": 32254,
+      "y": 32248,
+      "z": 7
+    },
+    "exit": {
+      "x": 32254,
+      "y": 32248,
+      "z": 8
+    },
+    "kind": "walk"
+  },
+  {
+    "entry": {
+      "x": 32254,
+      "y": 32248,
+      "z": 8
+    },
+    "exit": {
+      "x": 32254,
+      "y": 32248,
+      "z": 7
+    },
+    "kind": "walk"
+  },
+  {
+    "entry": {
+      "x": 32248,
+      "y": 32250,
+      "z": 8
+    },
+    "exit": {
+      "x": 32248,
+      "y": 32250,
+      "z": 9
+    },
+    "kind": "walk"
+  },
+  {
+    "entry": {
+      "x": 32248,
+      "y": 32250,
+      "z": 9
+    },
+    "exit": {
+      "x": 32248,
+      "y": 32250,
+      "z": 8
+    },
+    "kind": "walk"
+  },
+  {
+    "entry": {
+      "x": 32344,
+      "y": 32222,
+      "z": 7
+    },
+    "exit": {
+      "x": 32344,
+      "y": 32222,
+      "z": 6
+    },
+    "kind": "walk"
+  },
+  {
+    "entry": {
+      "x": 32344,
+      "y": 32222,
+      "z": 6
+    },
+    "exit": {
+      "x": 32344,
+      "y": 32222,
+      "z": 7
+    },
+    "kind": "walk"
+  },
+  {
+    "entry": {
+      "x": 32375,
+      "y": 32251,
+      "z": 7
+    },
+    "exit": {
+      "x": 32375,
+      "y": 32251,
+      "z": 8
+    },
+    "kind": "shovel"
+  },
+  {
+    "entry": {
+      "x": 32375,
+      "y": 32251,
+      "z": 8
+    },
+    "exit": {
+      "x": 32375,
+      "y": 32251,
+      "z": 7
+    },
+    "kind": "rope"
+  },
+  {
+    "entry": {
+      "x": 32395,
+      "y": 32224,
+      "z": 7
+    },
+    "exit": {
+      "x": 32395,
+      "y": 32224,
+      "z": 8
+    },
+    "kind": "walk"
+  },
+  {
+    "entry": {
+      "x": 32395,
+      "y": 32224,
+      "z": 8
+    },
+    "exit": {
+      "x": 32395,
+      "y": 32224,
+      "z": 7
+    },
+    "kind": "ladder"
+  },
+  {
+    "entry": {
+      "x": 32192,
+      "y": 31800,
+      "z": 7
+    },
+    "exit": {
+      "x": 32192,
+      "y": 31800,
+      "z": 8
+    },
+    "kind": "walk"
+  },
+  {
+    "entry": {
+      "x": 32192,
+      "y": 31800,
+      "z": 8
+    },
+    "exit": {
+      "x": 32192,
+      "y": 31800,
+      "z": 7
+    },
+    "kind": "walk"
+  },
+  {
+    "entry": {
+      "x": 32228,
+      "y": 31787,
+      "z": 7
+    },
+    "exit": {
+      "x": 32228,
+      "y": 31787,
+      "z": 8
+    },
+    "kind": "walk"
+  },
+  {
+    "entry": {
+      "x": 32228,
+      "y": 31787,
+      "z": 8
+    },
+    "exit": {
+      "x": 32228,
+      "y": 31787,
+      "z": 7
+    },
+    "kind": "walk"
+  },
+  {
+    "entry": {
+      "x": 32213,
+      "y": 31764,
+      "z": 7
+    },
+    "exit": {
+      "x": 32213,
+      "y": 31764,
+      "z": 6
+    },
+    "kind": "walk"
+  },
+  {
+    "entry": {
+      "x": 32213,
+      "y": 31764,
+      "z": 6
+    },
+    "exit": {
+      "x": 32213,
+      "y": 31764,
+      "z": 7
+    },
+    "kind": "walk"
+  },
+  {
+    "entry": {
+      "x": 32242,
+      "y": 31808,
+      "z": 7
+    },
+    "exit": {
+      "x": 32242,
+      "y": 31808,
+      "z": 8
+    },
+    "kind": "shovel"
+  },
+  {
+    "entry": {
+      "x": 32242,
+      "y": 31808,
+      "z": 8
+    },
+    "exit": {
+      "x": 32242,
+      "y": 31808,
+      "z": 7
+    },
+    "kind": "rope"
+  },
+  {
+    "entry": {
+      "x": 32726,
+      "y": 31634,
+      "z": 7
+    },
+    "exit": {
+      "x": 32726,
+      "y": 31634,
+      "z": 6
+    },
+    "kind": "walk"
+  },
+  {
+    "entry": {
+      "x": 32726,
+      "y": 31634,
+      "z": 6
+    },
+    "exit": {
+      "x": 32726,
+      "y": 31634,
+      "z": 7
+    },
+    "kind": "walk"
+  },
+  {
+    "entry": {
+      "x": 32726,
+      "y": 31634,
+      "z": 6
+    },
+    "exit": {
+      "x": 32726,
+      "y": 31634,
+      "z": 5
+    },
+    "kind": "walk"
+  },
+  {
+    "entry": {
+      "x": 32726,
+      "y": 31634,
+      "z": 5
+    },
+    "exit": {
+      "x": 32726,
+      "y": 31634,
+      "z": 6
+    },
+    "kind": "walk"
+  },
+  {
+    "entry": {
+      "x": 32728,
+      "y": 31648,
+      "z": 7
+    },
+    "exit": {
+      "x": 32728,
+      "y": 31648,
+      "z": 6
+    },
+    "kind": "walk"
+  },
+  {
+    "entry": {
+      "x": 32728,
+      "y": 31648,
+      "z": 6
+    },
+    "exit": {
+      "x": 32728,
+      "y": 31648,
+      "z": 7
+    },
+    "kind": "walk"
+  },
+  {
+    "entry": {
+      "x": 32752,
+      "y": 31665,
+      "z": 7
+    },
+    "exit": {
+      "x": 32752,
+      "y": 31665,
+      "z": 8
+    },
+    "kind": "ladder"
+  },
+  {
+    "entry": {
+      "x": 32752,
+      "y": 31665,
+      "z": 8
+    },
+    "exit": {
+      "x": 32752,
+      "y": 31665,
+      "z": 7
+    },
+    "kind": "ladder"
+  },
+  {
+    "entry": {
+      "x": 32657,
+      "y": 31753,
+      "z": 7
+    },
+    "exit": {
+      "x": 32657,
+      "y": 31753,
+      "z": 8
+    },
+    "kind": "walk"
+  },
+  {
+    "entry": {
+      "x": 32657,
+      "y": 31753,
+      "z": 8
+    },
+    "exit": {
+      "x": 32657,
+      "y": 31753,
+      "z": 7
+    },
+    "kind": "walk"
+  },
+  {
+    "entry": {
+      "x": 32657,
+      "y": 31760,
+      "z": 8
+    },
+    "exit": {
+      "x": 32657,
+      "y": 31760,
+      "z": 9
+    },
+    "kind": "walk"
+  },
+  {
+    "entry": {
+      "x": 32657,
+      "y": 31760,
+      "z": 9
+    },
+    "exit": {
+      "x": 32657,
+      "y": 31760,
+      "z": 8
+    },
+    "kind": "walk"
+  },
+  {
+    "entry": {
+      "x": 32644,
+      "y": 31780,
+      "z": 9
+    },
+    "exit": {
+      "x": 32644,
+      "y": 31780,
+      "z": 10
+    },
+    "kind": "walk"
+  },
+  {
+    "entry": {
+      "x": 32644,
+      "y": 31780,
+      "z": 10
+    },
+    "exit": {
+      "x": 32644,
+      "y": 31780,
+      "z": 9
+    },
+    "kind": "walk"
+  },
+  {
+    "entry": {
+      "x": 32632,
+      "y": 31787,
+      "z": 10
+    },
+    "exit": {
+      "x": 32632,
+      "y": 31787,
+      "z": 11
+    },
+    "kind": "walk"
+  },
+  {
+    "entry": {
+      "x": 32632,
+      "y": 31787,
+      "z": 11
+    },
+    "exit": {
+      "x": 32632,
+      "y": 31787,
+      "z": 10
+    },
+    "kind": "walk"
+  },
+  {
+    "entry": {
+      "x": 32620,
+      "y": 31800,
+      "z": 10
+    },
+    "exit": {
+      "x": 32620,
+      "y": 31800,
+      "z": 11
+    },
+    "kind": "walk"
+  },
+  {
+    "entry": {
+      "x": 32620,
+      "y": 31800,
+      "z": 11
+    },
+    "exit": {
+      "x": 32620,
+      "y": 31800,
+      "z": 10
+    },
+    "kind": "ladder"
+  },
+  {
+    "_comment": "Wasp cave — shovel hole entry z=7 → z=8",
+    "entry": {"x": 32428, "y": 32314, "z": 7},
+    "exit":  {"x": 32428, "y": 32314, "z": 8},
+    "kind": "shovel"
+  },
+  {
+    "_comment": "Wasp cave — rope hole up z=8 → z=7 (exit one tile north of hole)",
+    "entry": {"x": 32428, "y": 32314, "z": 8},
+    "exit":  {"x": 32428, "y": 32313, "z": 7},
+    "kind": "rope"
+  },
+  {
+    "_comment": "Wasp cave — rope hole up z=9 → z=8 (nearest walkable exit)",
+    "entry": {"x": 32430, "y": 32302, "z": 9},
+    "exit":  {"x": 32429, "y": 32302, "z": 8},
+    "kind": "rope"
+  },
+  {
+    "_comment": "Thais depot/temple — stairs up z=8 → z=7",
+    "entry": {"x": 32349, "y": 32225, "z": 8},
+    "exit":  {"x": 32349, "y": 32225, "z": 7},
+    "kind": "walk"
+  },
+  {
+    "_comment": "Thais depot/temple — stairs down z=7 → z=8",
+    "entry": {"x": 32349, "y": 32225, "z": 7},
+    "exit":  {"x": 32349, "y": 32225, "z": 8},
+    "kind": "walk"
+  },
+  {
+    "_comment": "Thais ammo shop — ladder/hole down z=7 → z=6",
+    "entry": {"x": 32344, "y": 32245, "z": 7},
+    "exit":  {"x": 32344, "y": 32244, "z": 6},
+    "kind": "walk"
+  },
+  {
+    "_comment": "Thais ammo shop — ladder up z=6 → z=7",
+    "entry": {"x": 32344, "y": 32244, "z": 6},
+    "exit":  {"x": 32344, "y": 32245, "z": 7},
+    "kind": "ladder"
+  },
+  {
+    "_comment": "Venore depot island — stairs up z=7 → z=6 (east edge of depot island, enters elevated walkway over canal)",
+    "entry": {"x": 32939, "y": 32071, "z": 7},
+    "exit":  {"x": 32939, "y": 32071, "z": 6},
+    "kind": "walk"
+  },
+  {
+    "_comment": "Venore depot island — stairs down z=6 → z=7 (back to depot island ground level)",
+    "entry": {"x": 32939, "y": 32071, "z": 6},
+    "exit":  {"x": 32939, "y": 32071, "z": 7},
+    "kind": "walk"
+  },
+  {
+    "_comment": "Venore temple island — stairs down z=6 → z=7 (west edge of temple island, exits elevated walkway over canal)",
+    "entry": {"x": 32954, "y": 32073, "z": 6},
+    "exit":  {"x": 32954, "y": 32073, "z": 7},
+    "kind": "walk"
+  },
+  {
+    "_comment": "Venore temple island — stairs up z=7 → z=6 (from temple island to elevated walkway)",
+    "entry": {"x": 32954, "y": 32073, "z": 7},
+    "exit":  {"x": 32954, "y": 32073, "z": 6},
+    "kind": "walk"
+  }
+]

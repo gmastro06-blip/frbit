@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\src\position_resolver.py
+# hypothesis_version: 6.151.9
+
+[0.0, 5000.0, 1000, 'avg_ms', 'coordinate_ocr', 'custom', 'enabled', 'floor', 'hint', 'hit_rate', 'hits', 'kind', 'last_coord', 'last_result', 'local_minimap', 'memory_reader', 'minimap_radar', 'misses', 'resolve_count', 'sources', 'wn.pr']

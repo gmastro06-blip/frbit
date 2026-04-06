@@ -1,0 +1,1 @@
+- [User profile — frbit project](user_profile.md) — Tibia bot dev, Python/threading/CV2/Win32, production codebase, values structural review over style

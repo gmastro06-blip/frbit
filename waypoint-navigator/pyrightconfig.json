@@ -1,0 +1,5 @@
+{
+  "typeCheckingMode": "basic",
+  "extraPaths": [".", "src"],
+  "exclude": ["tests", "tools", "examples", "_*.py"]
+}

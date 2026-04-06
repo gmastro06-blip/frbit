@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Thais Depot",
+    "icon": "flag",
+    "description": "",
+    "x": 32347,
+    "y": 32226,
+    "z": 7,
+    "note": "Thais Depot & bank — centro de Thais"
+  },
+  {
+    "name": "Thais Temple",
+    "icon": "flag",
+    "description": "",
+    "x": 32369,
+    "y": 32241,
+    "z": 7,
+    "note": "Templo de Thais — punto de respawn"
+  },
+  {
+    "name": "Venore Depot",
+    "icon": "flag",
+    "description": "",
+    "x": 32927,
+    "y": 32076,
+    "z": 7,
+    "note": "Venore Depot — isla del depot, confirmado por jugador"
+  },
+  {
+    "name": "Venore Temple",
+    "icon": "flag",
+    "description": "",
+    "x": 32959,
+    "y": 32076,
+    "z": 7,
+    "note": "Venore Temple — isla del templo, confirmado por jugador"
+  },
+  {
+    "name": "Ab'Dendriel Depot",
+    "icon": "flag",
+    "description": "",
+    "x": 32682,
+    "y": 31685,
+    "z": 7,
+    "note": "Ab'Dendriel Depot & bank — confirmado via markers.json"
+  },
+  {
+    "name": "Ab'Dendriel Temple",
+    "icon": "flag",
+    "description": "",
+    "x": 32607,
+    "y": 31680,
+    "z": 7,
+    "note": "Templo de Ab'Dendriel — confirmado via markers.json"
+  },
+  {
+    "name": "Carlin Depot",
+    "icon": "flag",
+    "description": "",
+    "x": 32336,
+    "y": 31784,
+    "z": 7,
+    "note": "Carlin Depot and post office — confirmado via markers.json"
+  },
+  {
+    "name": "Carlin Temple",
+    "icon": "flag",
+    "description": "",
+    "x": 32360,
+    "y": 31782,
+    "z": 7,
+    "note": "Templo de Carlin — confirmado via markers.json"
+  }
+]

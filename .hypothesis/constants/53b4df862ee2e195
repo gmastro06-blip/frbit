@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\src\preflight.py
+# hypothesis_version: 6.151.9
+
+['*.png', '; ', 'BLOCKED', 'Driver loaded OK', 'FAIL', 'PASS', 'PIL', 'Package importable', 'READY', 'ROI válido', 'WARN', 'auto_combat', 'battle_list_roi', 'cache', 'combat_config', 'combat_config.json', 'combat_config_file', 'config.yaml', 'config.yaml válido', 'cv2', 'dependencies', "falta 'roi'", 'his_config', 'hp_roi', 'hpmp_config', 'hpmp_config.json', 'human_input_system', 'interception_driver', 'interception_package', 'maps', 'maps_cache', 'minimap_config', 'minimap_config.json', 'mp_roi', 'mss', 'numpy', 'roi', 'route_file', 'routes', 'script', 'spells', 'templates', 'templates_dir', 'utf-8', 'vk', 'waypoints', 'wn.pf', 'x', 'y']

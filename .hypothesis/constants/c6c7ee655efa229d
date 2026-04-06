@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\src\input_controller.py
+# hypothesis_version: 6.151.9
+
+[0.0, 0.005, 0.006, 0.01, 0.02, 0.022, 0.025, 0.03, 0.04, 0.05, 0.07, 0.15, 0.3, 3.0, 5.0, 100, 101, 102, 103, 104, 105, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 255, 256, 257, 258, 512, 513, 514, 516, 517, 1000, 1080, 1920, 65535, 2147745792, 4294967295, 'Tibia', 'WindowInfo', '_input', '_u', 'arrow', 'click', 'click_human', 'down', 'dwExtraInfo', 'dwFlags', 'dx', 'dy', 'hold_key', 'hwnd', 'hybrid', 'input_method', 'interception', 'is_available', 'is_connected', 'jitter_pct', 'key_delay', 'ki', 'left', 'log_count', 'mi', 'mouseData', 'move_mode', 'postmessage', 'press_key', 'press_two_keys', 'release_all_keys', 'right', 'scancode', 'shift_click', 'target_title', 'time', 'type', 'type_text', 'up', 'wScan', 'wVk', 'wasd', 'wn.ic']

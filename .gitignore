@@ -1,0 +1,44 @@
+# ── Python environment ─────────────────────────────────────────
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+
+# ── Python caches ───────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# ── Type checker / linter caches ───────────────────────────────
+.mypy_cache/
+.ruff_cache/
+.pyright/
+
+# ── Test & coverage artifacts ───────────────────────────────────
+.pytest_cache/
+.coverage
+coverage.xml
+coverage.json
+output/coverage_html/
+
+# ── IDE ─────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.code-workspace
+
+# ── Runtime output / debug images ───────────────────────────────
+image/
+output/
+logs/
+
+# ── Secrets ─────────────────────────────────────────────────────
+.env
+.env.local
+*.env
+
+# ── OS artifacts ────────────────────────────────────────────────
+Thumbs.db
+.DS_Store

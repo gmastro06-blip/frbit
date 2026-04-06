@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\src\adaptive_roi.py
+# hypothesis_version: 6.151.9
+
+[0.15, 0.7, 113, 115, 170, 200, 448, 462, 768, 769, 788, 1080, 1565, 1709, 1750, 1920, '*.bmp', '*.jpg', '*.png', 'anchor_count', 'anchors', 'anchors_meta.json', 'battle_list', 'cache_hits', 'cached_rois', 'condition_icons', 'confidence', 'expected_size', 'hp_bar', 'minimap', 'mp_bar', 'offset', 'utf-8', 'wn.ar']

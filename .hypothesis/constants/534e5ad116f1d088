@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\human_input_system\core\metrics_collector.py
+# hypothesis_version: 6.151.9
+
+[0.0, 0.25, 0.5, 0.75, 0.95, 10000, '%Y-%m-%d %H:%M:%S.%f', '.', 'INFO', 'a', 'afk_pauses', 'avg_duration', 'avg_path_length', 'by_type', 'count', 'error_rates', 'generated_at', 'key_press_durations', 'max', 'mean', 'median', 'min', 'mouse_movements', 'p25', 'p50', 'p75', 'p95', 'percentiles', 'reaction_times', 'std', 'total', 'total_inputs', 'utf-8', 'w']

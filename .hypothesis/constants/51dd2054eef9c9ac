@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\src\visualizer.py
+# hypothesis_version: 6.151.9
+
+[0.0, 0.1, 0.2, 0.5, 0.85, 0.9, 1.0, 1.5, 6.0, 150, 255, '-', 'Multi-stop Route', 'No steps to display.', 'Route', 'X', 'X  (pixel = 1 tile)', 'Y  (pixel = 1 tile)', '^', 'black', 'loaded_count', 'nearest', 'o', 'offset points', 'rainbow', 'route has no steps', 'tight', 'upper', 'upper right', 'waypoints_loaded', 'white', 'xMax', 'xMin', 'yMax', 'yMin']

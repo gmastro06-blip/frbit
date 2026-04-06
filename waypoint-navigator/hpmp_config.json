@@ -1,0 +1,33 @@
+{
+  "_comment": "Calibrado para resoluci\u00f3n Tibia 1456x816 en monitor 2.",
+  "hp_roi": [
+    12,
+    28,
+    771,
+    14
+  ],
+  "mp_roi": [
+    786,
+    26,
+    770,
+    15
+  ],
+  "heal_cooldown": 1.0,
+  "mana_cooldown": 1.0,
+  "smoothing": 1,
+  "hp_text_roi": [
+    300,
+    42,
+    80,
+    18
+  ],
+  "mp_text_roi": [
+    1060,
+    42,
+    80,
+    18
+  ],
+  "ocr_confidence": 0.3,
+  "numeric_update_interval": 0.0,
+  "outlier_threshold": 60
+}

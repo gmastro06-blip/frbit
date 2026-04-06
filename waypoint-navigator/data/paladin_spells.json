@@ -1,0 +1,274 @@
+{
+  "_meta": {
+    "source": "tibia.fandom.com/wiki/Spells (TibiaWiki)",
+    "generated": "2025-07-22",
+    "description": "Paladin (RP) spells. Includes attack, healing, support and distance spells.",
+    "notes": "cooldown values are approximate typical values in seconds"
+  },
+  "vocation": "Paladin",
+  "spells": {
+    "attack": {
+      "instant": [
+        {
+          "name": "Ethereal Spear",
+          "words": "exori con",
+          "level": 23,
+          "mana": 25,
+          "premium": true,
+          "type": "single_target",
+          "element": "physical",
+          "cooldown": 2,
+          "description": "Throws an ethereal spear at the target for physical damage"
+        },
+        {
+          "name": "Strong Ethereal Spear",
+          "words": "exori gran con",
+          "level": 90,
+          "mana": 55,
+          "premium": true,
+          "type": "single_target",
+          "element": "physical",
+          "cooldown": 8,
+          "description": "Strong single-target physical damage at range"
+        },
+        {
+          "name": "Divine Missile",
+          "words": "exori san",
+          "level": 40,
+          "mana": 20,
+          "premium": true,
+          "type": "single_target",
+          "element": "holy",
+          "cooldown": 2,
+          "description": "Throws a holy missile at the target"
+        },
+        {
+          "name": "Divine Caldera",
+          "words": "exevo mas san",
+          "level": 50,
+          "mana": 160,
+          "premium": true,
+          "type": "aoe",
+          "element": "holy",
+          "area": "3x3_around",
+          "cooldown": 4,
+          "description": "Holy AoE damage around caster"
+        },
+        {
+          "name": "Holy Flash",
+          "words": "utori san",
+          "level": 70,
+          "mana": 30,
+          "premium": true,
+          "type": "single_target",
+          "element": "holy",
+          "cooldown": 16,
+          "description": "Applies holy DoT to target creature"
+        },
+        {
+          "name": "Sharpshooter",
+          "words": "utito tempo san",
+          "level": 150,
+          "mana": 450,
+          "premium": true,
+          "type": "buff",
+          "cooldown": 10,
+          "duration": 10,
+          "description": "Increases distance damage by 100% for 10s but halves movement"
+        }
+      ],
+      "rune": [
+        {
+          "name": "Holy Missile Rune",
+          "words": "adori san",
+          "level": 27,
+          "mana": 300,
+          "element": "holy",
+          "description": "Creates Holy Missile rune — single-target holy damage"
+        }
+      ]
+    },
+    "healing": [
+      {
+        "name": "Light Healing",
+        "words": "exura",
+        "level": 8,
+        "mana": 20,
+        "premium": false,
+        "cooldown": 1,
+        "description": "Heals a small amount of health"
+      },
+      {
+        "name": "Wound Cleansing",
+        "words": "exura ico",
+        "level": 10,
+        "mana": 40,
+        "premium": false,
+        "cooldown": 1,
+        "description": "Moderate healing, Paladin primary low-level heal"
+      },
+      {
+        "name": "Intense Wound Cleansing",
+        "words": "exura gran ico",
+        "level": 80,
+        "mana": 200,
+        "premium": true,
+        "cooldown": 1,
+        "description": "Strong healing, RP exclusive"
+      },
+      {
+        "name": "Recovery",
+        "words": "utura",
+        "level": 25,
+        "mana": 75,
+        "premium": true,
+        "cooldown": 60,
+        "duration": 60,
+        "description": "Heal over time for 60 seconds"
+      },
+      {
+        "name": "Intense Recovery",
+        "words": "utura gran",
+        "level": 50,
+        "mana": 165,
+        "premium": true,
+        "cooldown": 60,
+        "duration": 60,
+        "description": "Strong heal over time for 60 seconds"
+      }
+    ],
+    "support": [
+      {
+        "name": "Haste",
+        "words": "utani hur",
+        "level": 14,
+        "mana": 60,
+        "premium": false,
+        "cooldown": 2,
+        "duration": 30,
+        "effect": "speed +30%",
+        "description": "Increases speed. Cures paralysis."
+      },
+      {
+        "name": "Swift Foot",
+        "words": "utamo tempo san",
+        "level": 80,
+        "mana": 400,
+        "premium": true,
+        "cooldown": 16,
+        "duration": 10,
+        "description": "Maximum speed boost for Paladins, unable to attack while active"
+      },
+      {
+        "name": "Protect Party",
+        "words": "utamo mas sio",
+        "level": 32,
+        "mana": 90,
+        "premium": true,
+        "duration": 120,
+        "description": "Shields 3% damage for each party member"
+      },
+      {
+        "name": "Cure Poison",
+        "words": "exana pox",
+        "level": 10,
+        "mana": 30,
+        "premium": false,
+        "cooldown": 6,
+        "description": "Cures poison condition"
+      },
+      {
+        "name": "Cure Burning",
+        "words": "exana flam",
+        "level": 30,
+        "mana": 30,
+        "premium": true,
+        "cooldown": 6,
+        "description": "Cures burning condition"
+      },
+      {
+        "name": "Cure Electrification",
+        "words": "exana vis",
+        "level": 22,
+        "mana": 30,
+        "premium": true,
+        "cooldown": 6,
+        "description": "Cures electrification condition"
+      },
+      {
+        "name": "Cure Bleeding",
+        "words": "exana kor",
+        "level": 45,
+        "mana": 30,
+        "premium": true,
+        "cooldown": 6,
+        "description": "Cures bleeding condition"
+      },
+      {
+        "name": "Levitate",
+        "words": "exani hur up / exani hur down",
+        "level": 12,
+        "mana": 50,
+        "premium": false,
+        "description": "Vertical movement"
+      },
+      {
+        "name": "Light",
+        "words": "utevo lux",
+        "level": 8,
+        "mana": 20,
+        "premium": false,
+        "description": "Light in 3 tile radius"
+      },
+      {
+        "name": "Great Light",
+        "words": "utevo gran lux",
+        "level": 13,
+        "mana": 60,
+        "premium": false,
+        "description": "Light in 4 tile radius"
+      },
+      {
+        "name": "Paladin's Avatar",
+        "words": "uteta san",
+        "level": 300,
+        "mana": 800,
+        "premium": true,
+        "cooldown": 7200,
+        "description": "Turns into paladin avatar with multiple benefits"
+      }
+    ],
+    "conditions": {
+      "cure_poison": {"words": "exana pox", "level": 10, "mana": 30},
+      "cure_bleeding": {"words": "exana kor", "level": 45, "mana": 30},
+      "cure_burning": {"words": "exana flam", "level": 30, "mana": 30},
+      "cure_electrification": {"words": "exana vis", "level": 22, "mana": 30}
+    }
+  },
+  "combat_rotation": {
+    "_comment": "Recommended RP combat rotation based on level and situation",
+    "low_level_8_25": {
+      "single_target": ["auto_attack"],
+      "healing": ["exura", "exura ico"],
+      "buff": ["utani hur"]
+    },
+    "mid_level_25_50": {
+      "single_target": ["exori con", "auto_attack"],
+      "aoe": ["exevo mas san"],
+      "healing": ["exura ico", "utura"],
+      "buff": ["utani hur"]
+    },
+    "high_level_50_150": {
+      "single_target": ["exori con", "exori san"],
+      "aoe": ["exevo mas san"],
+      "healing": ["exura ico", "utura gran"],
+      "buff": ["utani hur", "utori san"]
+    },
+    "endgame_150plus": {
+      "single_target": ["exori gran con", "exori san"],
+      "aoe": ["exevo mas san"],
+      "healing": ["exura gran ico", "utura gran"],
+      "buff": ["uteta san", "utito tempo san", "utani hur"]
+    }
+  }
+}

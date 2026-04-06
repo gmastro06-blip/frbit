@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\src\anti_kick.py
+# hypothesis_version: 6.151.9
+
+[0.06, 0.25, 0.8, 1.3, 3.0, 5.0, 60.0, 300.0, 145, '[K] Started', '[K] send error: %s', 'actions_sent', 'any', 'camera_rotate', 'hotkey', 'idle_secs', 'mouse_jitter', 'move_mouse_relative', 'running', 'wn.ak']

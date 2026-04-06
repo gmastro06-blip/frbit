@@ -1,0 +1,28 @@
+[run]
+source = src
+omit =
+    # Requires live Windows video capture APIs (OBS WebSocket, DXCam, WGC, MSS)
+    src/frame_capture.py
+    src/frame_sources.py
+    # Requires Windows HWND + PostMessage / Interception kernel driver
+    src/input_controller.py
+    # Requires live Tibia game frame for calibration
+    src/minimap_calibrator.py
+    src/calibrator.py
+    # Requires pygame display (not headless-safe)
+    src/monitor_gui.py
+    # Requires full multi-window session
+    src/multi_session.py
+    # Deprecated — scheduled for deletion
+    src/deprecated_ocr.py
+
+[report]
+exclude_lines =
+    # standard exclusions
+    pragma: no cover
+    if TYPE_CHECKING:
+    # frozen executable guards
+    if getattr\(sys,\s*'frozen'
+    # abstract stubs
+    \.\.\.
+    raise NotImplementedError

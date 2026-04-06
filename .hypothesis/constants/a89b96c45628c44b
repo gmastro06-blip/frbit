@@ -1,0 +1,4 @@
+# file: C:\Users\gmast\Documents\frbit\review_system\quality_analyzer.py
+# hypothesis_version: 6.151.9
+
+[0.0, 0.1, 0.2, 0.4, 0.5, 1.0, 2.0, 100.0, 100, 300, 500, '#', '*.py', '--format=total', '-m', 'README.md', 'README.rst', '[large-class]', '[long-function]', '[many-params]', '_', 'combat_manager.py', 'coverage', 'hpmp_detector.py', 'navigator.py', 'readme.md', 'replace', 'report', 'script_executor.py', 'session.py', 'src', 'tests', 'utf-8']

@@ -1,0 +1,4 @@
+# file: C:\Users\gmast\Documents\frbit\review_system\file_discovery.py
+# hypothesis_version: 6.151.9
+
+[1024, 10000, '**/*.py', '..']

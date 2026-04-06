@@ -1,0 +1,377 @@
+{
+  "_meta": {
+    "source": "tibia.fandom.com/wiki/Spells (TibiaWiki)",
+    "generated": "2026-02-28",
+    "description": "Knight (EK) spells extracted from TibiaWiki. Includes all attack, support and healing spells available to knights.",
+    "notes": "cooldown values are approximate typical values in seconds"
+  },
+  "vocation": "Knight",
+  "spells": {
+    "attack": {
+      "instant": [
+        {
+          "name": "Brutal Strike",
+          "words": "exori ico",
+          "level": 16,
+          "mana": 30,
+          "premium": false,
+          "type": "single_target",
+          "element": "physical",
+          "cooldown": 6,
+          "description": "Performs a brutal attack on the selected target"
+        },
+        {
+          "name": "Whirlwind Throw",
+          "words": "exori hur",
+          "level": 28,
+          "mana": 40,
+          "premium": true,
+          "type": "ranged_single",
+          "element": "physical",
+          "range": 5,
+          "cooldown": 6,
+          "description": "Throws wielded weapon at target like a boomerang"
+        },
+        {
+          "name": "Berserk",
+          "words": "exori",
+          "level": 35,
+          "mana": 115,
+          "premium": true,
+          "type": "aoe",
+          "element": "physical",
+          "area": "surrounding_1sqm",
+          "cooldown": 4,
+          "description": "Whirlwind attack dealing damage to all surrounding targets"
+        },
+        {
+          "name": "Front Sweep",
+          "words": "exori min",
+          "level": 70,
+          "mana": 200,
+          "premium": true,
+          "type": "frontal_aoe",
+          "element": "physical",
+          "cooldown": 6,
+          "description": "Powerful cleave attack dealing damage to targets in front"
+        },
+        {
+          "name": "Groundshaker",
+          "words": "exori mas",
+          "level": 33,
+          "mana": 160,
+          "premium": true,
+          "type": "aoe",
+          "element": "physical",
+          "area": "3sqm_radius",
+          "cooldown": 8,
+          "description": "Massive stomp dealing damage in 3 sqm radius"
+        },
+        {
+          "name": "Fierce Berserk",
+          "words": "exori gran",
+          "level": 90,
+          "mana": 340,
+          "premium": true,
+          "type": "aoe",
+          "element": "physical",
+          "area": "surrounding_1sqm",
+          "cooldown": 6,
+          "description": "Furious whirlwind attack dealing high damage to all surrounding"
+        },
+        {
+          "name": "Annihilation",
+          "words": "exori gran ico",
+          "level": 110,
+          "mana": 300,
+          "premium": true,
+          "type": "single_target",
+          "element": "physical",
+          "cooldown": 30,
+          "description": "Devastating blow dealing massive physical damage to selected target"
+        },
+        {
+          "name": "Executioner's Throw",
+          "words": "exori amp kor",
+          "level": 300,
+          "mana": 225,
+          "premium": true,
+          "type": "chain",
+          "element": "physical",
+          "cooldown": 8,
+          "description": "Throws weapon on target, bouncing it on nearby enemies"
+        }
+      ]
+    },
+    "healing": [
+      {
+        "name": "Wound Cleansing",
+        "words": "exura ico",
+        "level": 8,
+        "mana": 40,
+        "premium": false,
+        "cooldown": 1,
+        "description": "Restores a small amount of health"
+      },
+      {
+        "name": "Intense Wound Cleansing",
+        "words": "exura gran ico",
+        "level": 80,
+        "mana": 200,
+        "premium": true,
+        "cooldown": 600,
+        "description": "Heals a large amount of hit points"
+      },
+      {
+        "name": "Recovery",
+        "words": "utura",
+        "level": 50,
+        "mana": 75,
+        "premium": true,
+        "cooldown": 60,
+        "heal_type": "hot",
+        "heal_per_tick": 20,
+        "tick_interval": 3,
+        "duration": 60,
+        "total_heal": 400,
+        "description": "Healing over time: 20hp every 3s for 60s"
+      },
+      {
+        "name": "Intense Recovery",
+        "words": "utura gran",
+        "level": 100,
+        "mana": 165,
+        "premium": true,
+        "cooldown": 60,
+        "heal_type": "hot",
+        "heal_per_tick": 40,
+        "tick_interval": 3,
+        "duration": 60,
+        "total_heal": 800,
+        "description": "Healing over time: 40hp every 3s for 60s"
+      },
+      {
+        "name": "Fair Wound Cleansing",
+        "words": "exura med ico",
+        "level": 300,
+        "mana": 90,
+        "premium": true,
+        "cooldown": 1,
+        "description": "Restores a medium amount of health"
+      },
+      {
+        "name": "Restoration",
+        "words": "exura max vita",
+        "level": 300,
+        "mana": 260,
+        "premium": true,
+        "cooldown": 6,
+        "description": "Restores a very large amount of health and cures paralysis"
+      }
+    ],
+    "support": [
+      {
+        "name": "Haste",
+        "words": "utani hur",
+        "level": 14,
+        "mana": 60,
+        "premium": false,
+        "cooldown": 2,
+        "duration": 30,
+        "effect": "speed +30%",
+        "description": "Increases base speed by 30% for 30s. Cures paralysis."
+      },
+      {
+        "name": "Strong Haste",
+        "words": "utani gran hur",
+        "level": 20,
+        "mana": 100,
+        "premium": true,
+        "cooldown": 2,
+        "duration": 21,
+        "effect": "speed +70%",
+        "description": "Increases base speed by 70% for 21s. Cures paralysis."
+      },
+      {
+        "name": "Challenge",
+        "words": "exeta res",
+        "level": 20,
+        "mana": 40,
+        "premium": true,
+        "cooldown": 2,
+        "effect": "taunt",
+        "description": "All nearby creatures change target to caster for 6s"
+      },
+      {
+        "name": "Blood Rage",
+        "words": "utito tempo",
+        "level": 60,
+        "mana": 290,
+        "premium": true,
+        "cooldown": 2,
+        "duration": 10,
+        "effect": "melee_skills +35%, defense -100%, damage_taken +15%",
+        "description": "Increases melee attack skills by 35% for 10s"
+      },
+      {
+        "name": "Protector",
+        "words": "utamo tempo",
+        "level": 55,
+        "mana": 200,
+        "premium": true,
+        "cooldown": 2,
+        "duration": 12,
+        "effect": "shielding +120%, damage_taken -15%, attack -35%",
+        "description": "Increases shielding to 220% for 12s"
+      },
+      {
+        "name": "Charge",
+        "words": "utani tempo hur",
+        "level": 25,
+        "mana": 100,
+        "premium": true,
+        "cooldown": 2,
+        "duration": 5,
+        "effect": "speed +90%",
+        "description": "Increases speed by 90% for 5s"
+      },
+      {
+        "name": "Cancel Magic Shield",
+        "words": "exana vita",
+        "level": 14,
+        "mana": 50,
+        "premium": true,
+        "description": "Removes active Magic Shield"
+      },
+      {
+        "name": "Chivalrous Challenge",
+        "words": "exeta amp res",
+        "level": 150,
+        "mana": 80,
+        "premium": true,
+        "cooldown": 2,
+        "effect": "chain_taunt_3_targets",
+        "description": "Chains up to 3 ranged creatures, turns them melee for 12s"
+      },
+      {
+        "name": "Cure Poison",
+        "words": "exana pox",
+        "level": 10,
+        "mana": 30,
+        "premium": false,
+        "cooldown": 6,
+        "description": "Cures poison condition"
+      },
+      {
+        "name": "Cure Bleeding",
+        "words": "exana kor",
+        "level": 45,
+        "mana": 30,
+        "premium": true,
+        "cooldown": 6,
+        "description": "Cures bleeding condition"
+      },
+      {
+        "name": "Cure Burning",
+        "words": "exana flam",
+        "level": 30,
+        "mana": 30,
+        "premium": true,
+        "cooldown": 6,
+        "description": "Cures burning condition"
+      },
+      {
+        "name": "Cure Electrification",
+        "words": "exana vis",
+        "level": 22,
+        "mana": 30,
+        "premium": true,
+        "cooldown": 6,
+        "description": "Cures electrification condition"
+      },
+      {
+        "name": "Magic Shield",
+        "words": "utamo vita",
+        "level": 14,
+        "mana": 50,
+        "premium": false,
+        "cooldown": 2,
+        "duration": 180,
+        "description": "Damage reduces Mana instead of HP for 180s"
+      },
+      {
+        "name": "Levitate",
+        "words": "exani hur up / exani hur down",
+        "level": 12,
+        "mana": 50,
+        "premium": false,
+        "description": "Vertical movement via levitation"
+      },
+      {
+        "name": "Find Person",
+        "words": "exiva \"name\"",
+        "level": 8,
+        "mana": 20,
+        "premium": false,
+        "description": "Shows direction of a player"
+      },
+      {
+        "name": "Light",
+        "words": "utevo lux",
+        "level": 8,
+        "mana": 20,
+        "premium": false,
+        "description": "Light in 3 tile radius for 6m10s"
+      },
+      {
+        "name": "Great Light",
+        "words": "utevo gran lux",
+        "level": 13,
+        "mana": 60,
+        "premium": false,
+        "description": "Light in 4 tile radius for 11m35s"
+      },
+      {
+        "name": "Avatar of Steel",
+        "words": "uteta res eq",
+        "level": 300,
+        "mana": 800,
+        "premium": true,
+        "cooldown": 7200,
+        "description": "Turns into avatar with multiple benefits"
+      }
+    ],
+    "conditions": {
+      "cure_poison": {"words": "exana pox", "level": 10, "mana": 30},
+      "cure_bleeding": {"words": "exana kor", "level": 45, "mana": 30},
+      "cure_burning": {"words": "exana flam", "level": 30, "mana": 30},
+      "cure_electrification": {"words": "exana vis", "level": 22, "mana": 30}
+    }
+  },
+  "combat_rotation": {
+    "_comment": "Recommended EK combat rotation based on level and situation",
+    "low_level_8_35": {
+      "single_target": ["exori ico"],
+      "healing": ["exura ico"],
+      "buff": ["utani hur"]
+    },
+    "mid_level_35_70": {
+      "aoe_3plus": ["exori", "exori mas"],
+      "single_target": ["exori ico", "exori hur"],
+      "healing": ["exura ico", "utura"],
+      "buff": ["utani gran hur", "exeta res", "utamo tempo"]
+    },
+    "high_level_70_200": {
+      "aoe_3plus": ["exori gran", "exori min", "exori mas", "exori"],
+      "single_target": ["exori gran ico", "exori ico", "exori hur"],
+      "healing": ["exura gran ico", "exura ico", "utura gran"],
+      "buff": ["utani tempo hur", "exeta amp res", "utito tempo"]
+    },
+    "endgame_200plus": {
+      "aoe_3plus": ["exori gran", "exori min", "exori amp kor", "exori mas", "exori"],
+      "single_target": ["exori gran ico", "exori ico", "exori hur"],
+      "healing": ["exura max vita", "exura med ico", "exura gran ico", "utura gran"],
+      "buff": ["uteta res eq", "utani tempo hur", "exeta amp res", "utito tempo"]
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "battle_list_roi": [
+    1570,
+    335,
+    161,
+    394
+  ],
+  "templates_dir": "cache/templates",
+  "attack_vk": 34,
+  "spells": [
+    {
+      "vk": 0,
+      "min_mp": 0,
+      "cooldown": 0.0,
+      "label": "disabled_placeholder"
+    }
+  ],
+  "_spells_disabled_comment": "Spells deshabilitados \u00e2\u20ac\u201d personaje nivel 8, requieren nivel 20-35. Re-habilitar al subir de nivel.",
+  "hp_flee_pct": 0,
+  "flee_vk": 0,
+  "_flee_disabled_comment": "Flee deshabilitado \u00e2\u20ac\u201d flee_vk=0 hace flee un no-op. hp_flee_pct=0 evita falsa confianza.",
+  "check_interval": 0.35,
+  "confidence": 0.65,
+  "click_to_attack_delay": 0.2,
+  "reselect_interval": 5.0,
+  "skip_top": 0,
+  "slot_height": 22,
+  "ref_width": 1920,
+  "ref_height": 1009,
+  "ocr_detection": true,
+  "ocr_confidence": 0.55,
+  "monster_priority": [
+    "Dog",
+    "Cave Rat",
+    "Wasp",
+    "Poison Spider",
+    "Bug",
+    "Spider"
+  ],
+  "monster_filter": [
+    "dog",
+    "cave_rat",
+    "wasp",
+    "poison_spider",
+    "bug",
+    "spider"
+  ],
+  "aoe_mob_threshold": 2,
+  "flee_mob_count": 4,
+  "max_expected_mobs": 6,
+  "lure_action": "warn"
+}

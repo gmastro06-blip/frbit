@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\src\break_scheduler.py
+# hypothesis_version: 6.151.9
+
+[0.0, 3.0, 3.5, 4.0, 6.0, 7.0, 10.0, 15.0, 16.0, 45.0, 120.0, 500, 3600, 'BREAK', 'DAILY CAP SLEEP', 'LONG BREAK', 'break_num', 'breaks_taken', 'duration_s', 'enabled', 'kind', 'next_break_in_m', 'on_break', 'session_elapsed_h', 'session_hours', 'total_break_time_m', 'wn.bs']

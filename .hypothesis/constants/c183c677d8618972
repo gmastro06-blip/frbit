@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\src\soak_monitor.py
+# hypothesis_version: 6.151.9
+
+[0.0, 0.1, 2.0, 5.0, 30.0, 50.0, 500.0, 1024, 3600, '.jsonl.old', '[I] sample error: %s', 'a', 'cpu_pct', 'elapsed_h', 'latest', 'output', 'peak_cpu_pct', 'peak_memory_mb', 'peak_threads', 'rss_mb', 'running', 'samples', 'soak_telemetry.jsonl', 'system_cpu_pct', 'system_mem_pct', 'threads', 'ts', 'utf-8', 'vms_mb', 'warnings_count', 'wn.sk']

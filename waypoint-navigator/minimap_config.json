@@ -1,0 +1,18 @@
+{
+  "roi": [
+    1753,
+    27,
+    109,
+    112
+  ],
+  "tiles_wide": 109,
+  "floor": 7,
+  "confidence": 0.30,
+  "mask_center": true,
+  "scale_factors": [
+    1.0
+  ],
+  "local_confidence": 0.45,
+  "max_jump_tiles": 10,
+  "temporal_smoothing": 1
+}

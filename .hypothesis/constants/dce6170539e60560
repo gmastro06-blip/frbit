@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\src\script_parser.py
+# hypothesis_version: 6.151.9
+
+[0.0, '"', '#', ',', '0x', '<', 'Coordinate', 'Instruction', '^action\\s+(\\S+)', '^depot\\b', '^goto\\s+(\\S+)', '^label\\s+(\\S+)', '^use_hotkey\\s+(\\S+)', '^wait\\s+([\\d.]+)', '_', 'action', 'actions', 'amount', 'call', 'cond_jump', 'depot', 'depots', 'door', 'func', 'goto', 'goto_label', 'hint', 'hp', 'if_stat', 'item_name', 'jumps', 'kind', 'label', 'label_jump', 'label_skip', 'labels', 'ladder', 'movement', 'node', 'op', 'open_door', 'replace', 'rope', 'say', 'secs', 'sentence', 'shovel', 'stand', 'stat', 'talk_npc', 'threshold', 'total', 'unique_kinds', 'unknown', 'use_hotkey', 'use_item', 'utf-8', 'var_name', 'vk', 'wait', 'wait_secs', 'waits', 'walk', 'words', 'x', 'y', 'z']

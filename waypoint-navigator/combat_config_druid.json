@@ -1,0 +1,75 @@
+{
+  "_comment": "ED (Druid) combat config — example for earth/ice hunting, sio-capable @ 1920x1080",
+  "battle_list_roi": [1568, 175, 162, 345],
+  "templates_dir": "cache/templates",
+  "attack_vk": 0,
+  "spells": [
+    {
+      "vk": 113,
+      "min_mp": 20,
+      "cooldown": 2.0,
+      "label": "exori tera",
+      "type": "single_target",
+      "_comment": "F2 = Terra Strike (20 mana, 2s cd) — main filler"
+    },
+    {
+      "vk": 114,
+      "min_mp": 210,
+      "cooldown": 4.0,
+      "label": "exevo tera hur",
+      "type": "wave",
+      "_comment": "F3 = Terra Wave (210 mana, 4s cd) — frontal AoE"
+    },
+    {
+      "vk": 115,
+      "min_mp": 700,
+      "cooldown": 40.0,
+      "label": "exevo gran mas tera",
+      "type": "aoe",
+      "_comment": "F4 = Wrath of Nature (700 mana, 40s cd) — big AoE"
+    },
+    {
+      "vk": 116,
+      "min_mp": 1050,
+      "cooldown": 40.0,
+      "label": "exevo gran mas frigo",
+      "type": "aoe",
+      "_comment": "F5 = Eternal Winter (1050 mana, 40s cd) — big ice AoE"
+    }
+  ],
+  "healing": {
+    "_comment": "Druid healing config — ED heals with exura/exura gran + sio for party",
+    "heal_spell_vk": 112,
+    "heal_spell_label": "exura gran",
+    "heal_spell_mana": 70,
+    "heal_trigger_hp_pct": 70,
+    "sio_vk": 111,
+    "sio_label": "exura sio",
+    "sio_target": "",
+    "sio_trigger_hp_pct": 60,
+    "mass_heal_vk": 110,
+    "mass_heal_label": "exura gran mas res",
+    "mass_heal_mana": 150,
+    "mana_shield_vk": 117,
+    "mana_shield_label": "utamo vita",
+    "mana_shield_trigger_hp_pct": 35,
+    "_note": "ED is the party healer — sio_target should be set to EK name"
+  },
+  "hp_flee_pct": 25,
+  "flee_vk": 118,
+  "check_interval": 0.30,
+  "confidence": 0.65,
+  "click_to_attack_delay": 0.12,
+  "reselect_interval": 3.0,
+  "skip_top": 0,
+  "slot_height": 22,
+  "ref_width": 1920,
+  "ref_height": 1080,
+  "ocr_detection": false,
+  "ocr_confidence": 0.3,
+  "monster_priority": [],
+  "aoe_mob_threshold": 3,
+  "flee_mob_count": 5,
+  "max_expected_mobs": 8,
+  "lure_action": "warn"
+}

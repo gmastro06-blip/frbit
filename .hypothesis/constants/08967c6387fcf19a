@@ -1,0 +1,4 @@
+# file: C:\Users\gmast\Documents\frbit\review_system\code_analyzer.py
+# hypothesis_version: 6.151.9
+
+[0.0, 0.23, 1.0, 5.2, 16.2, 100.0, 100, 171, '"""', '#', "'''", '.', 'replace', 'utf-8']

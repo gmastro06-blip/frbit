@@ -1,0 +1,68 @@
+{
+  "hp_bar_corner": {
+    "offset": [
+      12,
+      12
+    ],
+    "expected_size": [
+      769,
+      11
+    ],
+    "confidence": 0.7
+  },
+  "mp_bar_corner": {
+    "offset": [
+      12,
+      12
+    ],
+    "expected_size": [
+      768,
+      11
+    ],
+    "confidence": 0.7
+  },
+  "minimap_corner": {
+    "offset": [
+      15,
+      8
+    ],
+    "expected_size": [
+      107,
+      101
+    ],
+    "confidence": 0.7
+  },
+  "battle_list_header": {
+    "offset": [
+      9,
+      27
+    ],
+    "expected_size": [
+      162,
+      200
+    ],
+    "confidence": 0.65
+  },
+  "inventory_header": {
+    "offset": [
+      9,
+      27
+    ],
+    "expected_size": [
+      162,
+      100
+    ],
+    "confidence": 0.65
+  },
+  "chat_header": {
+    "offset": [
+      0,
+      16
+    ],
+    "expected_size": [
+      400,
+      200
+    ],
+    "confidence": 0.6
+  }
+}

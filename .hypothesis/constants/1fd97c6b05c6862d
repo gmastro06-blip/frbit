@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\src\chat_responder.py
+# hypothesis_version: 6.151.9
+
+[0.0, 0.03, 0.05, 0.08, 0.12, 0.2, 0.3, 0.6, 0.8, 1.25, 2.0, 3.0, 12.0, 30.0, 100, 130, 160, 200, 255, 300, 570, 600, '?', 'Chat responder error', 'brb', 'busy atm', 'e16', 'e17', 'emit', 'enabled', 'hello!', 'hello, how are you?', 'hey', 'hey :)', 'hey, hi!', 'hi', 'hi there', 'hola', 'hunting sorry', 'im here now', 'need something?', 'not now sry', 'one sec', 'pixel_count', 'pms_detected', 'press_key', 'responses_sent', 'sry was busy', 'sup', 'text', 'total_scans', 'type_text', "what's up?", 'wn.cr', 'yes?']

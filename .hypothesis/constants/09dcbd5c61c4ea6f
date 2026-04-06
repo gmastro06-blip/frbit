@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\src\depot_orchestrator.py
+# hypothesis_version: 6.151.9
+
+[0.0, 0.2, 0.45, 0.8, 1.2, 1.25, 30.0, '_cfg', '_ctrl', 'bank_dialogue_delay', 'enabled', 'found', 'hi', 'inventory_full', 'last_resupply_ts', 'last_trigger_reason', 'resupply_count', 'supplies_low', 'type_text', 'withdraw all', 'wn.do', 'yes']

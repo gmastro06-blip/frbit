@@ -1,0 +1,68 @@
+{
+  "_comment": "MS (Sorcerer) combat config — example for mid-level energy hunting @ 1920x1080",
+  "battle_list_roi": [1568, 175, 162, 345],
+  "templates_dir": "cache/templates",
+  "attack_vk": 0,
+  "spells": [
+    {
+      "vk": 113,
+      "min_mp": 20,
+      "cooldown": 2.0,
+      "label": "exori vis",
+      "type": "single_target",
+      "_comment": "F2 = Energy Strike (20 mana, 2s cd) — main filler"
+    },
+    {
+      "vk": 114,
+      "min_mp": 110,
+      "cooldown": 4.0,
+      "label": "exevo gran vis lux",
+      "type": "beam",
+      "_comment": "F3 = Great Energy Beam (110 mana, 4s cd)"
+    },
+    {
+      "vk": 115,
+      "min_mp": 170,
+      "cooldown": 4.0,
+      "label": "exevo vis hur",
+      "type": "wave",
+      "_comment": "F4 = Energy Wave (170 mana, 4s cd) — cone AoE"
+    },
+    {
+      "vk": 116,
+      "min_mp": 600,
+      "cooldown": 40.0,
+      "label": "exevo gran mas vis",
+      "type": "aoe",
+      "_comment": "F5 = Rage of the Skies (600 mana, 40s cd) — big AoE"
+    }
+  ],
+  "healing": {
+    "_comment": "Sorcerer healing config — mages heal with exura / exura vita",
+    "heal_spell_vk": 112,
+    "heal_spell_label": "exura vita",
+    "heal_spell_mana": 160,
+    "heal_trigger_hp_pct": 60,
+    "mana_shield_vk": 117,
+    "mana_shield_label": "utamo vita",
+    "mana_shield_trigger_hp_pct": 40,
+    "_note": "Sorcerer relies on Magic Shield (utamo vita) as emergency"
+  },
+  "hp_flee_pct": 25,
+  "flee_vk": 118,
+  "check_interval": 0.30,
+  "confidence": 0.65,
+  "click_to_attack_delay": 0.12,
+  "reselect_interval": 3.0,
+  "skip_top": 0,
+  "slot_height": 22,
+  "ref_width": 1920,
+  "ref_height": 1080,
+  "ocr_detection": false,
+  "ocr_confidence": 0.3,
+  "monster_priority": [],
+  "aoe_mob_threshold": 3,
+  "flee_mob_count": 5,
+  "max_expected_mobs": 8,
+  "lure_action": "warn"
+}

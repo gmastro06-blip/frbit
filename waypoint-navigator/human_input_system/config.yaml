@@ -1,0 +1,129 @@
+# Human Input System Configuration
+# Configuración del sistema de humanización de inputs para Tibia bot
+
+# Timing Configuration
+timing:
+  reaction_time_mean: 220.0        # ms — media de tiempo de reacción
+  reaction_time_std: 40.0          # ms — desviación estándar
+  key_press_duration_mean: 80.0    # ms — duración media de presión de tecla
+  key_press_duration_std: 15.0     # ms
+  micro_pause_mean: 25.0           # ms — micro-pausa entre movimientos de mouse
+  micro_pause_std: 8.0             # ms
+
+# Behavior Configuration
+behavior:
+  error_rate_base: 0.05            # 5% probabilidad de error
+  error_probabilities:
+    wrong_key: 0.4                 # 40% de errores son tecla incorrecta
+    double_press: 0.3              # 30% son doble presión
+    miss_click: 0.2                # 20% son miss-click
+    hesitation: 0.1                # 10% son hesitación
+
+  fatigue_rate_per_hour: 0.10      # Fatiga incrementa 0.10 por hora
+  fatigue_level_initial: 0.0       # Sin fatiga inicial
+  afk_pause_probability_per_hour: 0.3   # 30% probabilidad por hora
+  afk_min_duration: 30.0           # segundos
+  afk_max_duration: 300.0          # segundos
+  enable_circadian_adjustment: true
+
+# Mouse Movement Configuration
+mouse:
+  bezier_control_offset_min: 0.1   # 10% de distancia
+  bezier_control_offset_max: 0.3   # 30% de distancia
+  micro_movement_std: 1.5          # píxeles
+  overshoot_probability: 0.3       # 30% probabilidad
+  overshoot_distance_min: 5.0      # píxeles
+  overshoot_distance_max: 15.0     # píxeles
+  min_movement_duration: 200.0     # ms
+  max_movement_duration: 2000.0    # ms
+  points_per_movement: 50
+
+# Arduino / Pico 2 HID Configuration
+# Compatible con: Arduino Leonardo, Pro Micro, Raspberry Pi Pico 2
+# Ver pico2/README.md para instrucciones de setup con Pico 2
+arduino:
+  enabled: false
+  port: null                       # null = auto-detect (funciona con Arduino y Pico 2)
+  baudrate: 115200
+  timeout: 0.1                     # segundos
+  retry_attempts: 3
+
+# Raspberry Pi Pico 2 HID Configuration
+# Alternativa al Arduino — mismo protocolo, hardware más potente
+# Ver pico2/README.md para instrucciones de setup
+pico:
+  enabled: false
+  port: null                       # null = auto-detect (busca CircuitPython CDC)
+  baudrate: 115200
+  timeout: 0.1                     # segundos
+  retry_attempts: 3
+
+# Behavior Profiles
+profiles:
+  default:
+    name: "default"
+    description: "Perfil balanceado para gameplay normal"
+    timing:
+      reaction_time_mean: 220.0
+      reaction_time_std: 40.0
+      key_press_duration_mean: 80.0
+      key_press_duration_std: 15.0
+    behavior:
+      error_rate_base: 0.05
+      fatigue_rate_per_hour: 0.10
+      afk_pause_probability_per_hour: 0.3
+    mouse:
+      overshoot_probability: 0.3
+
+  novato:
+    name: "novato"
+    description: "Reacciones lentas, más errores (jugador principiante)"
+    timing:
+      reaction_time_mean: 280.0
+      reaction_time_std: 50.0
+      key_press_duration_mean: 95.0
+      key_press_duration_std: 20.0
+    behavior:
+      error_rate_base: 0.08
+      fatigue_rate_per_hour: 0.12
+      afk_pause_probability_per_hour: 0.4
+    mouse:
+      overshoot_probability: 0.4
+
+  experto:
+    name: "experto"
+    description: "Reacciones rápidas, pocos errores (jugador experto)"
+    timing:
+      reaction_time_mean: 180.0
+      reaction_time_std: 30.0
+      key_press_duration_mean: 65.0
+      key_press_duration_std: 12.0
+    behavior:
+      error_rate_base: 0.02
+      fatigue_rate_per_hour: 0.06
+      afk_pause_probability_per_hour: 0.2
+    mouse:
+      overshoot_probability: 0.2
+
+  cansado:
+    name: "cansado"
+    description: "Jugador cansado con fatiga alta"
+    timing:
+      reaction_time_mean: 320.0
+      reaction_time_std: 60.0
+      key_press_duration_mean: 105.0
+      key_press_duration_std: 25.0
+    behavior:
+      error_rate_base: 0.12
+      fatigue_rate_per_hour: 0.15
+      fatigue_level_initial: 0.6
+      afk_pause_probability_per_hour: 0.8
+    mouse:
+      overshoot_probability: 0.5
+
+# System Configuration
+system:
+  active_profile: "default"
+  log_directory: "./logs"
+  enable_humanization: true
+  enable_statistical_validation: false   # Solo para testing

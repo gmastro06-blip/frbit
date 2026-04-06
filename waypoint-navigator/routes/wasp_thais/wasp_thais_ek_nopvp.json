@@ -1,0 +1,690 @@
+{
+  "name": "wasp_thais_ek_nopvp",
+  "description": "Unified script route converted from waypoints.in and setup_ek_nopvp.json for live EK NoPvP field tests.",
+  "source_files": [
+    "setup_ek_nopvp.json",
+    "waypoints.in"
+  ],
+  "_meta": {
+    "start_coord": {
+      "x": 32349,
+      "y": 32225,
+      "z": 8
+    }
+  },
+  "session": {
+    "input_method": "mouse",
+    "loop_route": false,
+    "heal_hp_pct": 90,
+    "mana_threshold_pct": 20,
+    "heal_hotkey_vk": 82,
+    "mana_hotkey_vk": 112
+  },
+  "script_options": {
+    "hours_leave": [
+      9.5
+    ]
+  },
+  "wasp_setup": {
+    "general": {
+      "loot_type": "auto",
+      "anti_trap": "weapon",
+      "walk_type": "mouse"
+    },
+    "script_options": {
+      "hours_leave": [
+        9.5
+      ]
+    },
+    "containers": {
+      "loot_bp": "Orange Backpack"
+    },
+    "tools": {
+      "rope": {
+        "name": "rope"
+      },
+      "shovel": {
+        "name": "shovel"
+      }
+    },
+    "items": {
+      "mana potion": {
+        "hotkey": "f1",
+        "use": "self"
+      },
+      "meat": {
+        "hotkey": "f12",
+        "use": "use"
+      },
+      "honeycomb": {
+        "hotkey": "f3",
+        "use": "use"
+      }
+    },
+    "spells": {
+      "exura infir ico": "r"
+    },
+    "healing": [
+      {
+        "type": "hp",
+        "below_percent": 90,
+        "use_spell": "exura infir ico",
+        "min_mana_percent": 20,
+        "priority": 2
+      },
+      {
+        "type": "mp",
+        "below_percent": 20,
+        "use_item": "mana potion",
+        "priority": 1
+      }
+    ],
+    "hunt_config": {
+      "cap_leave": 80,
+      "mana_name": "mana potion",
+      "take_mana": 5,
+      "mana_leave": 1
+    },
+    "label_actions": [
+      {
+        "label": "count",
+        "action": "conditional_jump_item_count_below",
+        "args": {
+          "item_name": "honeycomb",
+          "amount": 50,
+          "label_jump": "continue",
+          "label_skip": "leave"
+        }
+      }
+    ],
+    "persistent_actions": [
+      {
+        "action": "eat_food",
+        "min_interval": 60,
+        "max_interval": 160,
+        "args": {
+          "hotkey": "f12"
+        }
+      }
+    ],
+    "target_monsters": [
+      {
+        "name": "Wasp",
+        "action": "follow",
+        "loot": true
+      },
+      {
+        "name": "Wolf",
+        "action": "follow",
+        "loot": true
+      },
+      {
+        "name": "Starving Wolf",
+        "action": "follow",
+        "loot": true
+      },
+      {
+        "name": "Poacher",
+        "action": "follow",
+        "loot": false
+      }
+    ],
+    "target_spells": [],
+    "loot": [
+      {
+        "name": "honeycomb",
+        "action": "loot",
+        "dest": "loot_bp"
+      },
+      {
+        "name": "honeycombs",
+        "action": "loot",
+        "dest": "loot_bp"
+      },
+      {
+        "name": "meat",
+        "action": "use"
+      }
+    ]
+  },
+  "script": [
+    {
+      "kind": "label",
+      "label": "start"
+    },
+    {
+      "kind": "label",
+      "label": "refill"
+    },
+    {
+      "kind": "node",
+      "x": 32349,
+      "y": 32225,
+      "z": 8
+    },
+    {
+      "kind": "action",
+      "action": "deposit"
+    },
+    {
+      "kind": "stand",
+      "x": 32348,
+      "y": 32231,
+      "z": 8
+    },
+    {
+      "kind": "node",
+      "x": 32345,
+      "y": 32221,
+      "z": 7
+    },
+    {
+      "kind": "action",
+      "action": "check_ammo"
+    },
+    {
+      "kind": "node",
+      "x": 32337,
+      "y": 32230,
+      "z": 7
+    },
+    {
+      "kind": "node",
+      "x": 32338,
+      "y": 32241,
+      "z": 7
+    },
+    {
+      "kind": "node",
+      "x": 32344,
+      "y": 32245,
+      "z": 7
+    },
+    {
+      "kind": "stand",
+      "x": 32350,
+      "y": 32246,
+      "z": 7
+    },
+    {
+      "kind": "stand",
+      "x": 32344,
+      "y": 32244,
+      "z": 6
+    },
+    {
+      "kind": "action",
+      "action": "buy_ammo"
+    },
+    {
+      "kind": "stand",
+      "x": 32350,
+      "y": 32246,
+      "z": 6
+    },
+    {
+      "kind": "node",
+      "x": 32338,
+      "y": 32249,
+      "z": 7
+    },
+    {
+      "kind": "node",
+      "x": 32337,
+      "y": 32232,
+      "z": 7
+    },
+    {
+      "kind": "node",
+      "x": 32348,
+      "y": 32216,
+      "z": 7
+    },
+    {
+      "kind": "node",
+      "x": 32367,
+      "y": 32216,
+      "z": 7
+    },
+    {
+      "kind": "label",
+      "label": "skip_ammo"
+    },
+    {
+      "kind": "node",
+      "x": 32380,
+      "y": 32215,
+      "z": 7
+    },
+    {
+      "kind": "node",
+      "x": 32394,
+      "y": 32214,
+      "z": 7
+    },
+    {
+      "kind": "open_door",
+      "x": 32400,
+      "y": 32217,
+      "z": 7
+    },
+    {
+      "kind": "stand",
+      "x": 32399,
+      "y": 32220,
+      "z": 7
+    },
+    {
+      "kind": "action",
+      "action": "sell"
+    },
+    {
+      "kind": "action",
+      "action": "buy_potions",
+      "items": [
+        {
+          "name": "mana potion",
+          "qty": 5
+        }
+      ]
+    },
+    {
+      "kind": "action",
+      "action": "check_supplies"
+    },
+    {
+      "kind": "open_door",
+      "x": 32400,
+      "y": 32217,
+      "z": 7
+    },
+    {
+      "kind": "label",
+      "label": "go_hunt"
+    },
+    {
+      "kind": "node",
+      "x": 32407,
+      "y": 32215,
+      "z": 7
+    },
+    {
+      "kind": "node",
+      "x": 32424,
+      "y": 32218,
+      "z": 7
+    },
+    {
+      "kind": "node",
+      "x": 32435,
+      "y": 32226,
+      "z": 7
+    },
+    {
+      "kind": "node",
+      "x": 32436,
+      "y": 32237,
+      "z": 7
+    },
+    {
+      "kind": "stand",
+      "x": 32438,
+      "y": 32240,
+      "z": 7
+    },
+    {
+      "kind": "stand",
+      "x": 32444,
+      "y": 32240,
+      "z": 7
+    },
+    {
+      "kind": "node",
+      "x": 32448,
+      "y": 32241,
+      "z": 7
+    },
+    {
+      "kind": "node",
+      "x": 32448,
+      "y": 32249,
+      "z": 7
+    },
+    {
+      "kind": "node",
+      "x": 32448,
+      "y": 32255,
+      "z": 7
+    },
+    {
+      "kind": "node",
+      "x": 32436,
+      "y": 32255,
+      "z": 7
+    },
+    {
+      "kind": "node",
+      "x": 32436,
+      "y": 32268,
+      "z": 7
+    },
+    {
+      "kind": "node",
+      "x": 32435,
+      "y": 32281,
+      "z": 7
+    },
+    {
+      "kind": "node",
+      "x": 32431,
+      "y": 32295,
+      "z": 7
+    },
+    {
+      "kind": "node",
+      "x": 32428,
+      "y": 32310,
+      "z": 7
+    },
+    {
+      "kind": "stand",
+      "x": 32428,
+      "y": 32313,
+      "z": 7
+    },
+    {
+      "kind": "shovel",
+      "x": 32428,
+      "y": 32314,
+      "z": 7
+    },
+    {
+      "kind": "label",
+      "label": "hunt"
+    },
+    {
+      "kind": "action",
+      "action": "walk_keys"
+    },
+    {
+      "kind": "node",
+      "x": 32431,
+      "y": 32316,
+      "z": 8
+    },
+    {
+      "kind": "node",
+      "x": 32431,
+      "y": 32321,
+      "z": 8
+    },
+    {
+      "kind": "node",
+      "x": 32439,
+      "y": 32326,
+      "z": 8
+    },
+    {
+      "kind": "node",
+      "x": 32445,
+      "y": 32324,
+      "z": 8
+    },
+    {
+      "kind": "node",
+      "x": 32442,
+      "y": 32308,
+      "z": 8
+    },
+    {
+      "kind": "node",
+      "x": 32436,
+      "y": 32302,
+      "z": 8
+    },
+    {
+      "kind": "node",
+      "x": 32426,
+      "y": 32294,
+      "z": 8
+    },
+    {
+      "kind": "node",
+      "x": 32424,
+      "y": 32305,
+      "z": 8
+    },
+    {
+      "kind": "label",
+      "label": "downcave"
+    },
+    {
+      "kind": "stand",
+      "x": 32430,
+      "y": 32302,
+      "z": 8
+    },
+    {
+      "kind": "node",
+      "x": 32430,
+      "y": 32304,
+      "z": 9
+    },
+    {
+      "kind": "node",
+      "x": 32435,
+      "y": 32307,
+      "z": 9
+    },
+    {
+      "kind": "node",
+      "x": 32444,
+      "y": 32307,
+      "z": 9
+    },
+    {
+      "kind": "node",
+      "x": 32444,
+      "y": 32301,
+      "z": 9
+    },
+    {
+      "kind": "node",
+      "x": 32444,
+      "y": 32295,
+      "z": 9
+    },
+    {
+      "kind": "node",
+      "x": 32443,
+      "y": 32307,
+      "z": 9
+    },
+    {
+      "kind": "node",
+      "x": 32441,
+      "y": 32307,
+      "z": 9
+    },
+    {
+      "kind": "node",
+      "x": 32430,
+      "y": 32306,
+      "z": 9
+    },
+    {
+      "kind": "node",
+      "x": 32425,
+      "y": 32308,
+      "z": 9
+    },
+    {
+      "kind": "node",
+      "x": 32434,
+      "y": 32314,
+      "z": 9
+    },
+    {
+      "kind": "node",
+      "x": 32418,
+      "y": 32314,
+      "z": 9
+    },
+    {
+      "kind": "node",
+      "x": 32428,
+      "y": 32302,
+      "z": 9
+    },
+    {
+      "kind": "label",
+      "label": "upcave"
+    },
+    {
+      "kind": "rope",
+      "x": 32430,
+      "y": 32302,
+      "z": 9
+    },
+    {
+      "kind": "stand",
+      "x": 32428,
+      "y": 32313,
+      "z": 8
+    },
+    {
+      "kind": "label",
+      "label": "count"
+    },
+    {
+      "kind": "call",
+      "func": "conditional_jump_item_count_below",
+      "item_name": "honeycomb",
+      "amount": 50,
+      "label_jump": "continue",
+      "label_skip": "leave"
+    },
+    {
+      "kind": "label",
+      "label": "continue"
+    },
+    {
+      "kind": "action",
+      "action": "check"
+    },
+    {
+      "kind": "label",
+      "label": "leave"
+    },
+    {
+      "kind": "rope",
+      "x": 32428,
+      "y": 32314,
+      "z": 8
+    },
+    {
+      "kind": "action",
+      "action": "walk_mouse"
+    },
+    {
+      "kind": "node",
+      "x": 32415,
+      "y": 32311,
+      "z": 7
+    },
+    {
+      "kind": "node",
+      "x": 32404,
+      "y": 32307,
+      "z": 7
+    },
+    {
+      "kind": "node",
+      "x": 32394,
+      "y": 32299,
+      "z": 7
+    },
+    {
+      "kind": "node",
+      "x": 32380,
+      "y": 32299,
+      "z": 7
+    },
+    {
+      "kind": "node",
+      "x": 32365,
+      "y": 32298,
+      "z": 7
+    },
+    {
+      "kind": "node",
+      "x": 32355,
+      "y": 32295,
+      "z": 7
+    },
+    {
+      "kind": "node",
+      "x": 32345,
+      "y": 32291,
+      "z": 7
+    },
+    {
+      "kind": "node",
+      "x": 32342,
+      "y": 32280,
+      "z": 7
+    },
+    {
+      "kind": "node",
+      "x": 32338,
+      "y": 32265,
+      "z": 7
+    },
+    {
+      "kind": "node",
+      "x": 32338,
+      "y": 32252,
+      "z": 7
+    },
+    {
+      "kind": "node",
+      "x": 32338,
+      "y": 32235,
+      "z": 7
+    },
+    {
+      "kind": "node",
+      "x": 32347,
+      "y": 32229,
+      "z": 7
+    },
+    {
+      "kind": "stand",
+      "x": 32347,
+      "y": 32231,
+      "z": 7
+    },
+    {
+      "kind": "node",
+      "x": 32349,
+      "y": 32225,
+      "z": 8
+    },
+    {
+      "kind": "action",
+      "action": "check_time"
+    },
+    {
+      "kind": "label",
+      "label": "train"
+    },
+    {
+      "kind": "action",
+      "action": "end"
+    },
+    {
+      "kind": "label",
+      "label": "start_trainer"
+    }
+  ]
+}

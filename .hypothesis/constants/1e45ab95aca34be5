@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\src\session_persistence.py
+# hypothesis_version: 6.151.9
+
+[0.0, 3600.0, '.tmp', 'SessionCheckpoint', 'extra', 'output', 'utf-8', 'w', 'wn']

@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\src\hpmp_detector.py
+# hypothesis_version: 6.151.9
+
+[0.0, 0.3, 0.5, 1.0, 2.0, 5.0, 100.0, 100, 120, 255, 310, 316, 322, 328, 374, 484, 1080, 1376, 1486, 1920, '(\\d+)', '0123456789/ ', 'HEAL!', 'HP', 'HP:?', 'HpMpConfig', 'HpMpNumericReader', 'MANA!', 'MP', 'MP:?', '_resolution_warned', 'debug_hpmp.png', 'en', 'frozen', 'hp', 'hp_confidence', 'hp_exact', 'hp_extreme_drops', 'hp_history_len', 'hp_max', 'hp_outlier_rejects', 'hp_roi', 'hp_text_roi', 'last_hp', 'last_mp', 'mp', 'mp_confidence', 'mp_exact', 'mp_history_len', 'mp_max', 'mp_outlier_rejects', 'mp_roi', 'mp_text_roi', 'numeric_age_s', 'smoothing', 'utf-8', 'w', 'wn.hp']

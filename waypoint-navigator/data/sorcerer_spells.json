@@ -1,0 +1,396 @@
+{
+  "_meta": {
+    "source": "tibia.fandom.com/wiki/Spells (TibiaWiki)",
+    "generated": "2025-07-22",
+    "description": "Sorcerer (MS) spells. Includes all attack, support and healing spells.",
+    "notes": "cooldown values are approximate typical values in seconds"
+  },
+  "vocation": "Sorcerer",
+  "spells": {
+    "attack": {
+      "instant": [
+        {
+          "name": "Energy Strike",
+          "words": "exori vis",
+          "level": 12,
+          "mana": 20,
+          "premium": false,
+          "type": "single_target",
+          "element": "energy",
+          "cooldown": 2,
+          "description": "Shoots an energy beam at the target"
+        },
+        {
+          "name": "Flame Strike",
+          "words": "exori flam",
+          "level": 14,
+          "mana": 20,
+          "premium": false,
+          "type": "single_target",
+          "element": "fire",
+          "cooldown": 2,
+          "description": "Shoots a fire projectile at the target"
+        },
+        {
+          "name": "Ice Strike",
+          "words": "exori frigo",
+          "level": 15,
+          "mana": 20,
+          "premium": false,
+          "type": "single_target",
+          "element": "ice",
+          "cooldown": 2,
+          "description": "Shoots an ice projectile at the target"
+        },
+        {
+          "name": "Terra Strike",
+          "words": "exori tera",
+          "level": 13,
+          "mana": 20,
+          "premium": false,
+          "type": "single_target",
+          "element": "earth",
+          "cooldown": 2,
+          "description": "Shoots an earth projectile at the target"
+        },
+        {
+          "name": "Death Strike",
+          "words": "exori mort",
+          "level": 16,
+          "mana": 20,
+          "premium": true,
+          "type": "single_target",
+          "element": "death",
+          "cooldown": 2,
+          "description": "Shoots a death projectile at the target"
+        },
+        {
+          "name": "Great Energy Beam",
+          "words": "exevo gran vis lux",
+          "level": 29,
+          "mana": 110,
+          "premium": false,
+          "type": "beam",
+          "element": "energy",
+          "cooldown": 4,
+          "description": "Shoots a long energy beam in a straight line"
+        },
+        {
+          "name": "Energy Beam",
+          "words": "exevo vis lux",
+          "level": 23,
+          "mana": 40,
+          "premium": false,
+          "type": "beam",
+          "element": "energy",
+          "cooldown": 4,
+          "description": "Shoots an energy beam in a straight line"
+        },
+        {
+          "name": "Energy Wave",
+          "words": "exevo vis hur",
+          "level": 38,
+          "mana": 170,
+          "premium": false,
+          "type": "wave",
+          "element": "energy",
+          "cooldown": 4,
+          "description": "Sends a wave of energy damage in front of the caster"
+        },
+        {
+          "name": "Hell's Core",
+          "words": "exevo gran mas flam",
+          "level": 60,
+          "mana": 1100,
+          "premium": true,
+          "type": "aoe",
+          "element": "fire",
+          "area": "huge_area",
+          "cooldown": 40,
+          "description": "Massive fire explosion affecting a huge area around caster"
+        },
+        {
+          "name": "Rage of the Skies",
+          "words": "exevo gran mas vis",
+          "level": 55,
+          "mana": 600,
+          "premium": true,
+          "type": "aoe",
+          "element": "energy",
+          "area": "huge_area",
+          "cooldown": 40,
+          "description": "Massive energy explosion affecting a huge area"
+        },
+        {
+          "name": "Sudden Death",
+          "words": "adori gran mort",
+          "level": 45,
+          "mana": 195,
+          "premium": true,
+          "type": "rune_attack",
+          "element": "death",
+          "cooldown": 2,
+          "description": "Requires Sudden Death rune — highest single-target damage"
+        },
+        {
+          "name": "Vis Hur",
+          "words": "exori gran vis",
+          "level": 80,
+          "mana": 170,
+          "premium": true,
+          "type": "single_target",
+          "element": "energy",
+          "cooldown": 8,
+          "description": "Severely damages targeted creature with energy"
+        },
+        {
+          "name": "Great Fire Wave",
+          "words": "exevo gran flam hur",
+          "level": 38,
+          "mana": 120,
+          "premium": true,
+          "type": "wave",
+          "element": "fire",
+          "cooldown": 4,
+          "description": "Sends a large wave of fire damage"
+        },
+        {
+          "name": "Eternal Winter",
+          "words": "exevo gran mas frigo",
+          "level": 60,
+          "mana": 1050,
+          "premium": true,
+          "type": "aoe",
+          "element": "ice",
+          "area": "huge_area",
+          "cooldown": 40,
+          "description": "Massive ice AoE damage"
+        }
+      ],
+      "rune": [
+        {
+          "name": "Sudden Death Rune",
+          "words": "adori gran mort",
+          "level": 45,
+          "mana": 985,
+          "element": "death",
+          "description": "Creates Sudden Death rune (SD) — highest single-target damage"
+        },
+        {
+          "name": "Great Fireball Rune",
+          "words": "adori mas flam",
+          "level": 30,
+          "mana": 530,
+          "element": "fire",
+          "description": "Creates Great Fireball rune — AoE fire damage"
+        },
+        {
+          "name": "Thunderstorm Rune",
+          "words": "adori mas vis",
+          "level": 28,
+          "mana": 430,
+          "element": "energy",
+          "description": "Creates Thunderstorm rune — AoE energy damage"
+        },
+        {
+          "name": "Avalanche Rune",
+          "words": "adori mas frigo",
+          "level": 30,
+          "mana": 530,
+          "element": "ice",
+          "description": "Creates Avalanche rune — AoE ice damage"
+        }
+      ]
+    },
+    "healing": [
+      {
+        "name": "Light Healing",
+        "words": "exura",
+        "level": 8,
+        "mana": 20,
+        "premium": false,
+        "cooldown": 1,
+        "description": "Heals a small amount of health"
+      },
+      {
+        "name": "Intense Healing",
+        "words": "exura gran",
+        "level": 20,
+        "mana": 70,
+        "premium": false,
+        "cooldown": 1,
+        "description": "Heals a moderate amount of health"
+      },
+      {
+        "name": "Ultimate Healing",
+        "words": "exura vita",
+        "level": 30,
+        "mana": 160,
+        "premium": false,
+        "cooldown": 1,
+        "description": "Heals a large amount of health"
+      }
+    ],
+    "support": [
+      {
+        "name": "Haste",
+        "words": "utani hur",
+        "level": 14,
+        "mana": 60,
+        "premium": false,
+        "cooldown": 2,
+        "duration": 30,
+        "effect": "speed +30%",
+        "description": "Increases speed. Cures paralysis."
+      },
+      {
+        "name": "Strong Haste",
+        "words": "utani gran hur",
+        "level": 20,
+        "mana": 100,
+        "premium": true,
+        "cooldown": 2,
+        "duration": 21,
+        "effect": "speed +70%",
+        "description": "Increases speed. Cures paralysis."
+      },
+      {
+        "name": "Magic Shield",
+        "words": "utamo vita",
+        "level": 14,
+        "mana": 50,
+        "premium": false,
+        "cooldown": 2,
+        "duration": 180,
+        "description": "Damage reduces Mana instead of HP for 180s"
+      },
+      {
+        "name": "Cancel Magic Shield",
+        "words": "exana vita",
+        "level": 14,
+        "mana": 50,
+        "premium": true,
+        "description": "Removes active Magic Shield"
+      },
+      {
+        "name": "Invisible",
+        "words": "utana vid",
+        "level": 35,
+        "mana": 440,
+        "premium": false,
+        "cooldown": 2,
+        "duration": 198,
+        "description": "Makes caster invisible for 198s (breaks on attack)"
+      },
+      {
+        "name": "Cure Poison",
+        "words": "exana pox",
+        "level": 10,
+        "mana": 30,
+        "premium": false,
+        "cooldown": 6,
+        "description": "Cures poison condition"
+      },
+      {
+        "name": "Cure Burning",
+        "words": "exana flam",
+        "level": 30,
+        "mana": 30,
+        "premium": true,
+        "cooldown": 6,
+        "description": "Cures burning condition"
+      },
+      {
+        "name": "Cure Electrification",
+        "words": "exana vis",
+        "level": 22,
+        "mana": 30,
+        "premium": true,
+        "cooldown": 6,
+        "description": "Cures electrification condition"
+      },
+      {
+        "name": "Cure Bleeding",
+        "words": "exana kor",
+        "level": 45,
+        "mana": 30,
+        "premium": true,
+        "cooldown": 6,
+        "description": "Cures bleeding condition"
+      },
+      {
+        "name": "Levitate",
+        "words": "exani hur up / exani hur down",
+        "level": 12,
+        "mana": 50,
+        "premium": false,
+        "description": "Vertical movement"
+      },
+      {
+        "name": "Find Person",
+        "words": "exiva \"name\"",
+        "level": 8,
+        "mana": 20,
+        "premium": false,
+        "description": "Shows direction of a player"
+      },
+      {
+        "name": "Light",
+        "words": "utevo lux",
+        "level": 8,
+        "mana": 20,
+        "premium": false,
+        "description": "Light in 3 tile radius"
+      },
+      {
+        "name": "Great Light",
+        "words": "utevo gran lux",
+        "level": 13,
+        "mana": 60,
+        "premium": false,
+        "description": "Light in 4 tile radius"
+      },
+      {
+        "name": "Sorcerer's Avatar",
+        "words": "uteta vis",
+        "level": 300,
+        "mana": 800,
+        "premium": true,
+        "cooldown": 7200,
+        "description": "Turns into sorcerer avatar with multiple benefits"
+      }
+    ],
+    "conditions": {
+      "cure_poison": {"words": "exana pox", "level": 10, "mana": 30},
+      "cure_bleeding": {"words": "exana kor", "level": 45, "mana": 30},
+      "cure_burning": {"words": "exana flam", "level": 30, "mana": 30},
+      "cure_electrification": {"words": "exana vis", "level": 22, "mana": 30}
+    }
+  },
+  "combat_rotation": {
+    "_comment": "Recommended MS combat rotation based on level and situation",
+    "low_level_8_30": {
+      "single_target": ["exori vis", "exori flam"],
+      "healing": ["exura"],
+      "buff": ["utani hur", "utamo vita"]
+    },
+    "mid_level_30_60": {
+      "aoe": ["exevo vis lux", "exevo gran vis lux", "exevo vis hur"],
+      "single_target": ["exori vis", "exori mort"],
+      "healing": ["exura gran", "exura vita"],
+      "buff": ["utani gran hur", "utamo vita"]
+    },
+    "high_level_60_200": {
+      "aoe": ["exevo gran mas vis", "exevo gran mas flam", "exevo gran flam hur"],
+      "single_target": ["exori gran vis", "exori mort"],
+      "healing": ["exura vita"],
+      "buff": ["utani gran hur", "utamo vita"]
+    },
+    "endgame_200plus": {
+      "aoe": ["exevo gran mas vis", "exevo gran mas flam", "exevo gran mas frigo"],
+      "single_target": ["exori gran vis"],
+      "healing": ["exura vita"],
+      "buff": ["uteta vis", "utani gran hur", "utamo vita"]
+    }
+  }
+}

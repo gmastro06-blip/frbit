@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\src\inventory_manager.py
+# hypothesis_version: 6.151.9
+
+[0.0, 0.8, 0.95, 10.0, 100, 'action', 'count', 'critical', 'depot', 'drop', 'e19', 'e20', 'emit', 'empty', 'estimated_count', 'fill_ratio', 'free_slots', 'full', 'full_count', 'last_status', 'low', 'name', 'nearly_full', 'ok', 'status', 'supplies', 'total_checks', 'unknown', 'warn', 'wn.im']

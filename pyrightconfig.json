@@ -1,0 +1,14 @@
+{
+  "typeCheckingMode": "basic",
+  "extraPaths": ["waypoint-navigator", "waypoint-navigator/src"],
+  "exclude": [
+    "waypoint-navigator/tests",
+    "waypoint-navigator/tools",
+    "waypoint-navigator/examples",
+    "waypoint-navigator/arduino",
+    "waypoint-navigator/pico2",
+    "review_system/tests",
+    ".kiro",
+    "output"
+  ]
+}

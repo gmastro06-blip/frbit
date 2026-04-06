@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\src\condition_monitor.py
+# hypothesis_version: 6.151.9
+
+[0.0, 0.08, 0.15, 0.35, 0.5, 0.65, 0.8, 1.25, 2.0, 2.5, 100, 105, 120, 140, 150, 160, 170, 180, 200, 220, 255, 462, 1080, 1709, 1920, '  [N] Detenido', '  [N] Loop terminado', ' | ', '*.bmp', '*.jpg', '*.png', 'ConditionConfig', 'active_conditions', 'bleeding', 'burning', 'color', 'condition', 'conditions', 'cooldown', 'debug_conditions.png', 'drunk', 'freezing', 'frozen', 'is_paused', 'is_running', 'label', 'ninguna', 'paralyze', 'poison', 'reaction_counts', 'reactions_registered', 'template', 'total_reactions', 'utf-8', 'vk', 'w']

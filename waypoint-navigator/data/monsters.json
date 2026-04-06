@@ -1,0 +1,399 @@
+{
+  "_meta": {
+    "source": "tibia.fandom.com/wiki (TibiaWiki)",
+    "generated": "2026-02-28",
+    "description": "Monster database extracted from TibiaWiki. Focused on Thais area + common EK hunting grounds.",
+    "notes": "damage_taken_pct: 100 = normal, >100 = weakness, <100 = resistance, 0 = immune"
+  },
+  "monsters": {
+    "Wasp": {
+      "hp": 35,
+      "exp": 24,
+      "armor": 4,
+      "speed": 160,
+      "max_damage": 22,
+      "classification": "Insects",
+      "bestiary_class": "Vermin",
+      "difficulty": "Trivial",
+      "abilities": [
+        {"type": "melee", "element": "physical", "min": 0, "max": 20},
+        {"type": "condition", "element": "earth", "effect": "poison", "damage_per_turn": 2}
+      ],
+      "damage_taken_pct": {
+        "physical": 100, "fire": 110, "ice": 100, "energy": 100,
+        "earth": 0, "death": 100, "holy": 100
+      },
+      "behaviour": {
+        "retarget": true,
+        "run_at_hp": 0,
+        "sense_invisible": false,
+        "paralysable": true,
+        "pushable": true,
+        "walks_through": ["poison"],
+        "walks_around": ["energy", "fire"]
+      },
+      "loot": [
+        {"item": "Honeycomb", "rarity": "semi-rare"}
+      ],
+      "locations": ["South of Thais", "West of Ab'Dendriel", "Northeastern Cormaya", "Green Claw Swamp", "Darashia", "Tiquanda", "Vandura"]
+    },
+    "Bug": {
+      "hp": 29,
+      "exp": 18,
+      "armor": 3,
+      "speed": 68,
+      "max_damage": 14,
+      "classification": "Insects",
+      "bestiary_class": "Vermin",
+      "difficulty": "Trivial",
+      "abilities": [
+        {"type": "melee", "element": "physical", "min": 0, "max": 14}
+      ],
+      "damage_taken_pct": {
+        "physical": 100, "fire": 110, "ice": 100, "energy": 100,
+        "earth": 0, "death": 100, "holy": 100
+      },
+      "behaviour": {
+        "retarget": false,
+        "run_at_hp": 0,
+        "sense_invisible": false,
+        "paralysable": true,
+        "pushable": true
+      },
+      "loot": [
+        {"item": "Gold Coin", "rarity": "common", "max_count": 4},
+        {"item": "Lump of Dirt", "rarity": "semi-rare"},
+        {"item": "Cherry", "rarity": "semi-rare"}
+      ],
+      "locations": ["South of Thais", "Darashia", "Plains of Havoc"]
+    },
+    "Rat": {
+      "hp": 20,
+      "exp": 5,
+      "armor": 1,
+      "speed": 52,
+      "max_damage": 8,
+      "classification": "Mammals",
+      "bestiary_class": "Vermin",
+      "difficulty": "Trivial",
+      "abilities": [
+        {"type": "melee", "element": "physical", "min": 0, "max": 8}
+      ],
+      "damage_taken_pct": {
+        "physical": 100, "fire": 110, "ice": 100, "energy": 100,
+        "earth": 80, "death": 100, "holy": 100
+      },
+      "behaviour": {
+        "retarget": false,
+        "run_at_hp": 0,
+        "sense_invisible": false,
+        "paralysable": true,
+        "pushable": true
+      },
+      "loot": [
+        {"item": "Gold Coin", "rarity": "common"},
+        {"item": "Cheese", "rarity": "uncommon"}
+      ],
+      "locations": ["Thais Sewers", "Rookgaard", "Ab'Dendriel", "Almost everywhere"]
+    },
+    "Poison Spider": {
+      "hp": 26,
+      "exp": 22,
+      "armor": 3,
+      "speed": 74,
+      "max_damage": 22,
+      "classification": "Arachnids",
+      "bestiary_class": "Vermin",
+      "difficulty": "Trivial",
+      "abilities": [
+        {"type": "melee", "element": "physical", "min": 0, "max": 14},
+        {"type": "condition", "element": "earth", "effect": "poison", "damage_per_turn": 4}
+      ],
+      "damage_taken_pct": {
+        "physical": 100, "fire": 110, "ice": 100, "energy": 100,
+        "earth": 0, "death": 100, "holy": 100
+      },
+      "behaviour": {
+        "retarget": false,
+        "run_at_hp": 0,
+        "sense_invisible": false,
+        "paralysable": true,
+        "pushable": true
+      },
+      "loot": [
+        {"item": "Gold Coin", "rarity": "common", "max_count": 4},
+        {"item": "Poison Spider Shell", "rarity": "semi-rare"}
+      ],
+      "locations": ["South of Thais", "Plain of Havoc", "Fibula Dungeon"]
+    },
+    "Spider": {
+      "hp": 20,
+      "exp": 12,
+      "armor": 2,
+      "speed": 72,
+      "max_damage": 10,
+      "classification": "Arachnids",
+      "bestiary_class": "Vermin",
+      "difficulty": "Trivial",
+      "abilities": [
+        {"type": "melee", "element": "physical", "min": 0, "max": 10}
+      ],
+      "damage_taken_pct": {
+        "physical": 100, "fire": 110, "ice": 100, "energy": 100,
+        "earth": 0, "death": 100, "holy": 100
+      },
+      "behaviour": {
+        "retarget": false,
+        "run_at_hp": 0,
+        "sense_invisible": false,
+        "paralysable": true,
+        "pushable": true
+      },
+      "loot": [
+        {"item": "Gold Coin", "rarity": "common", "max_count": 5}
+      ],
+      "locations": ["Thais Spider Cave", "Rookgaard", "Venore"]
+    },
+    "Wolf": {
+      "hp": 25,
+      "exp": 18,
+      "armor": 2,
+      "speed": 94,
+      "max_damage": 12,
+      "classification": "Mammals",
+      "bestiary_class": "Mammals",
+      "difficulty": "Trivial",
+      "abilities": [
+        {"type": "melee", "element": "physical", "min": 0, "max": 12}
+      ],
+      "damage_taken_pct": {
+        "physical": 100, "fire": 100, "ice": 100, "energy": 100,
+        "earth": 100, "death": 100, "holy": 100
+      },
+      "behaviour": {
+        "retarget": false,
+        "run_at_hp": 0,
+        "sense_invisible": false,
+        "paralysable": true,
+        "pushable": true
+      },
+      "loot": [
+        {"item": "Meat", "rarity": "common"}
+      ],
+      "locations": ["South of Thais", "Rookgaard", "Forest areas"]
+    },
+    "Snake": {
+      "hp": 15,
+      "exp": 10,
+      "armor": 1,
+      "speed": 60,
+      "max_damage": 16,
+      "classification": "Reptiles",
+      "bestiary_class": "Reptiles",
+      "difficulty": "Trivial",
+      "abilities": [
+        {"type": "melee", "element": "physical", "min": 0, "max": 8},
+        {"type": "condition", "element": "earth", "effect": "poison", "damage_per_turn": 1}
+      ],
+      "damage_taken_pct": {
+        "physical": 100, "fire": 110, "ice": 100, "energy": 100,
+        "earth": 0, "death": 100, "holy": 100
+      },
+      "behaviour": {
+        "retarget": false,
+        "run_at_hp": 0,
+        "sense_invisible": false,
+        "paralysable": true,
+        "pushable": true
+      },
+      "loot": [],
+      "locations": ["Thais area", "South of Thais"]
+    },
+    "Orc": {
+      "hp": 70,
+      "exp": 25,
+      "armor": 7,
+      "speed": 68,
+      "max_damage": 25,
+      "classification": "Humanoids",
+      "bestiary_class": "Humanoid",
+      "difficulty": "Easy",
+      "abilities": [
+        {"type": "melee", "element": "physical", "min": 0, "max": 25}
+      ],
+      "damage_taken_pct": {
+        "physical": 100, "fire": 100, "ice": 100, "energy": 105,
+        "earth": 100, "death": 110, "holy": 80
+      },
+      "behaviour": {
+        "retarget": false,
+        "run_at_hp": 0,
+        "sense_invisible": false,
+        "paralysable": true,
+        "pushable": true
+      },
+      "loot": [
+        {"item": "Gold Coin", "rarity": "common", "max_count": 14},
+        {"item": "Meat", "rarity": "common"},
+        {"item": "Sabre", "rarity": "uncommon"},
+        {"item": "Studded Armor", "rarity": "semi-rare"},
+        {"item": "Studded Shield", "rarity": "semi-rare"},
+        {"item": "Studded Helmet", "rarity": "semi-rare"},
+        {"item": "Orc Leather", "rarity": "rare"}
+      ],
+      "locations": ["Thais Orc Peninsula", "Edron Orc Cave"]
+    },
+    "Rotworm": {
+      "hp": 65,
+      "exp": 40,
+      "armor": 8,
+      "speed": 48,
+      "max_damage": 48,
+      "classification": "Annelids",
+      "bestiary_class": "Vermin",
+      "difficulty": "Easy",
+      "abilities": [
+        {"type": "melee", "element": "physical", "min": 0, "max": 48}
+      ],
+      "damage_taken_pct": {
+        "physical": 100, "fire": 110, "ice": 100, "energy": 100,
+        "earth": 0, "death": 100, "holy": 100
+      },
+      "behaviour": {
+        "retarget": false,
+        "run_at_hp": 0,
+        "sense_invisible": false,
+        "paralysable": true,
+        "pushable": false
+      },
+      "loot": [
+        {"item": "Gold Coin", "rarity": "common", "max_count": 17},
+        {"item": "Meat", "rarity": "common"},
+        {"item": "Ham", "rarity": "common"},
+        {"item": "Worm", "rarity": "uncommon", "max_count": 2},
+        {"item": "Lute", "rarity": "semi-rare"},
+        {"item": "Mace", "rarity": "semi-rare"},
+        {"item": "Sword", "rarity": "semi-rare"},
+        {"item": "Katana", "rarity": "rare"}
+      ],
+      "locations": ["Thais Rotworm Cave", "Edron", "Darashia", "Almost everywhere"]
+    },
+    "Cyclops": {
+      "hp": 260,
+      "exp": 150,
+      "armor": 17,
+      "speed": 90,
+      "max_damage": 105,
+      "classification": "Giants",
+      "bestiary_class": "Humanoid",
+      "difficulty": "Medium",
+      "abilities": [
+        {"type": "melee", "element": "physical", "min": 0, "max": 105}
+      ],
+      "damage_taken_pct": {
+        "physical": 105, "fire": 100, "ice": 100, "energy": 110,
+        "earth": 80, "death": 105, "holy": 100
+      },
+      "behaviour": {
+        "retarget": false,
+        "run_at_hp": 0,
+        "sense_invisible": true,
+        "paralysable": true,
+        "pushable": false
+      },
+      "loot": [
+        {"item": "Gold Coin", "rarity": "common", "max_count": 47},
+        {"item": "Meat", "rarity": "common"},
+        {"item": "Ham", "rarity": "common"},
+        {"item": "Short Sword", "rarity": "uncommon"},
+        {"item": "Battle Shield", "rarity": "semi-rare"},
+        {"item": "Plate Shield", "rarity": "semi-rare"},
+        {"item": "Wolf Tooth Chain", "rarity": "rare"},
+        {"item": "Cyclops Trophy", "rarity": "very rare"}
+      ],
+      "locations": ["Thais Cyclops Camp", "Mount Sternum", "Ab'Dendriel"]
+    },
+    "Minotaur": {
+      "hp": 100,
+      "exp": 50,
+      "armor": 10,
+      "speed": 80,
+      "max_damage": 40,
+      "classification": "Hybrids",
+      "bestiary_class": "Humanoid",
+      "difficulty": "Easy",
+      "abilities": [
+        {"type": "melee", "element": "physical", "min": 0, "max": 40}
+      ],
+      "damage_taken_pct": {
+        "physical": 100, "fire": 110, "ice": 100, "energy": 100,
+        "earth": 80, "death": 100, "holy": 100
+      },
+      "behaviour": {
+        "retarget": false,
+        "run_at_hp": 0,
+        "sense_invisible": false,
+        "paralysable": true,
+        "pushable": false
+      },
+      "loot": [
+        {"item": "Gold Coin", "rarity": "common", "max_count": 28},
+        {"item": "Meat", "rarity": "common"},
+        {"item": "Minotaur Horn", "rarity": "uncommon"},
+        {"item": "Chain Armor", "rarity": "uncommon"},
+        {"item": "Brass Helmet", "rarity": "semi-rare"},
+        {"item": "Plate Shield", "rarity": "rare"},
+        {"item": "Minotaur Trophy", "rarity": "very rare"}
+      ],
+      "locations": ["Mintwallin (under Thais)", "Darashia"]
+    },
+    "Dragon": {
+      "hp": 1000,
+      "exp": 700,
+      "armor": 25,
+      "speed": 86,
+      "max_damage": 430,
+      "classification": "Dragons",
+      "bestiary_class": "Dragon",
+      "difficulty": "Medium",
+      "abilities": [
+        {"type": "melee", "element": "physical", "min": 0, "max": 120},
+        {"type": "wave", "element": "fire", "min": 100, "max": 170},
+        {"type": "area", "element": "fire", "min": 60, "max": 140, "spell": "Great Fireball"},
+        {"type": "self_heal", "element": "healing", "min": 40, "max": 70}
+      ],
+      "damage_taken_pct": {
+        "physical": 100, "fire": 0, "ice": 110, "energy": 80,
+        "earth": 20, "death": 100, "holy": 100
+      },
+      "behaviour": {
+        "retarget": true,
+        "run_at_hp": 300,
+        "run_at_pct": 30,
+        "sense_invisible": true,
+        "paralysable": false,
+        "pushable": false,
+        "walks_through": ["energy", "fire", "poison"]
+      },
+      "loot": [
+        {"item": "Gold Coin", "rarity": "common", "max_count": 105},
+        {"item": "Dragon Ham", "rarity": "common", "max_count": 3},
+        {"item": "Steel Shield", "rarity": "uncommon"},
+        {"item": "Crossbow", "rarity": "uncommon"},
+        {"item": "Dragon's Tail", "rarity": "uncommon"},
+        {"item": "Burst Arrow", "rarity": "uncommon", "max_count": 10},
+        {"item": "Longsword", "rarity": "semi-rare"},
+        {"item": "Steel Helmet", "rarity": "semi-rare"},
+        {"item": "Broadsword", "rarity": "semi-rare"},
+        {"item": "Plate Legs", "rarity": "semi-rare"},
+        {"item": "Green Dragon Leather", "rarity": "rare"},
+        {"item": "Wand of Inferno", "rarity": "rare"},
+        {"item": "Strong Health Potion", "rarity": "rare"},
+        {"item": "Dragon Shield", "rarity": "very rare"},
+        {"item": "Dragon Trophy", "rarity": "very rare"},
+        {"item": "Dragonbone Staff", "rarity": "very rare"}
+      ],
+      "locations": ["Thais Ancient Temple", "Darashia Dragon Lair", "Mount Sternum", "Plains of Havoc"]
+    }
+  }
+}

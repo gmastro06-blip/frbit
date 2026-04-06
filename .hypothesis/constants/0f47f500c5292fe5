@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\src\character_detector.py
+# hypothesis_version: 6.151.9
+
+[0.03, 0.033, 0.07, 0.4, 0.5, 0.8, 1.0, 1.2, 1.25, 200, 255, 256, 500, 1080, 1920, 4455, 30976, 31744, 32768, 34048, 131072, '  [OCR] Listo.', ',', '-', 'ArraySize', 'Bind', 'CPUAccess', 'D1', 'D2', 'D3', 'D4', 'DepthPitch', 'DetectorConfig', 'DetectorConfig.roi', 'Format', 'Height', 'MipLvl', 'Misc', 'OBS_WS_PASSWORD', 'RowPitch', 'SmpCount', 'SmpQual', 'Tibia', 'Usage', 'Width', '_GUID', 'callback_count', 'debug_roi.png', 'en', 'frozen', 'is_running', 'last_position_set', 'localhost', 'mss', 'obs-ws', 'pData', 'png', 'screen', 'source_name', 'virtual-cam', 'w', 'wgc', '{}']

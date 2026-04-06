@@ -1,0 +1,35 @@
+{
+  "_comment": "Example multi-session config for 'python main.py multi-run multi_session_example.json'",
+  "sessions": [
+    {
+      "name": "Knight-EK",
+      "target_window": "Tibia - Knight",
+      "route_file": "routes/wasp_thais/wasp_thais_ek.json",
+      "input_method": "postmessage",
+      "loop_route": true,
+      "auto_combat": true,
+      "combat_config_file": "combat_config.json",
+      "heal_hp_pct": 70,
+      "heal_emergency_pct": 30,
+      "heal_hotkey_vk": 112,
+      "emergency_hotkey_vk": 114,
+      "mana_hotkey_vk": 113,
+      "auto_loot": true
+    },
+    {
+      "name": "Druid-ED",
+      "target_window": "Tibia - Druid",
+      "route_file": "routes/wasp_thais/wasp_thais_ed.json",
+      "input_method": "postmessage",
+      "loop_route": true,
+      "auto_combat": true,
+      "combat_config_file": "combat_config_druid.json",
+      "heal_hp_pct": 60,
+      "heal_emergency_pct": 25,
+      "heal_hotkey_vk": 112,
+      "emergency_hotkey_vk": 114,
+      "mana_hotkey_vk": 113,
+      "auto_loot": false
+    }
+  ]
+}

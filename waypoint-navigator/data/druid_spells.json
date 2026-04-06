@@ -1,0 +1,379 @@
+{
+  "_meta": {
+    "source": "tibia.fandom.com/wiki/Spells (TibiaWiki)",
+    "generated": "2025-07-22",
+    "description": "Druid (ED) spells. Includes all attack, healing, support and sio/mass-heal spells.",
+    "notes": "cooldown values are approximate typical values in seconds"
+  },
+  "vocation": "Druid",
+  "spells": {
+    "attack": {
+      "instant": [
+        {
+          "name": "Terra Strike",
+          "words": "exori tera",
+          "level": 13,
+          "mana": 20,
+          "premium": false,
+          "type": "single_target",
+          "element": "earth",
+          "cooldown": 2,
+          "description": "Shoots an earth projectile at the target"
+        },
+        {
+          "name": "Ice Strike",
+          "words": "exori frigo",
+          "level": 15,
+          "mana": 20,
+          "premium": false,
+          "type": "single_target",
+          "element": "ice",
+          "cooldown": 2,
+          "description": "Shoots an ice projectile at the target"
+        },
+        {
+          "name": "Flame Strike",
+          "words": "exori flam",
+          "level": 14,
+          "mana": 20,
+          "premium": false,
+          "type": "single_target",
+          "element": "fire",
+          "cooldown": 2,
+          "description": "Shoots a fire projectile at the target"
+        },
+        {
+          "name": "Energy Strike",
+          "words": "exori vis",
+          "level": 12,
+          "mana": 20,
+          "premium": false,
+          "type": "single_target",
+          "element": "energy",
+          "cooldown": 2,
+          "description": "Shoots an energy projectile at the target"
+        },
+        {
+          "name": "Terra Wave",
+          "words": "exevo tera hur",
+          "level": 38,
+          "mana": 210,
+          "premium": true,
+          "type": "wave",
+          "element": "earth",
+          "cooldown": 4,
+          "description": "Sends a wave of earth damage in front of the caster"
+        },
+        {
+          "name": "Strong Terra Strike",
+          "words": "exori gran tera",
+          "level": 70,
+          "mana": 60,
+          "premium": true,
+          "type": "single_target",
+          "element": "earth",
+          "cooldown": 8,
+          "description": "Strong single-target earth damage"
+        },
+        {
+          "name": "Strong Ice Strike",
+          "words": "exori gran frigo",
+          "level": 80,
+          "mana": 60,
+          "premium": true,
+          "type": "single_target",
+          "element": "ice",
+          "cooldown": 8,
+          "description": "Strong single-target ice damage"
+        },
+        {
+          "name": "Wrath of Nature",
+          "words": "exevo gran mas tera",
+          "level": 55,
+          "mana": 700,
+          "premium": true,
+          "type": "aoe",
+          "element": "earth",
+          "area": "huge_area",
+          "cooldown": 40,
+          "description": "Massive earth AoE damage around caster"
+        },
+        {
+          "name": "Eternal Winter",
+          "words": "exevo gran mas frigo",
+          "level": 60,
+          "mana": 1050,
+          "premium": true,
+          "type": "aoe",
+          "element": "ice",
+          "area": "huge_area",
+          "cooldown": 40,
+          "description": "Massive ice AoE damage around caster"
+        },
+        {
+          "name": "Ice Wave",
+          "words": "exevo frigo hur",
+          "level": 18,
+          "mana": 25,
+          "premium": false,
+          "type": "wave",
+          "element": "ice",
+          "cooldown": 4,
+          "description": "Sends a small wave of ice damage"
+        }
+      ],
+      "rune": [
+        {
+          "name": "Avalanche Rune",
+          "words": "adori mas frigo",
+          "level": 30,
+          "mana": 530,
+          "element": "ice",
+          "description": "Creates Avalanche rune — AoE ice damage"
+        },
+        {
+          "name": "Thunderstorm Rune",
+          "words": "adori mas vis",
+          "level": 28,
+          "mana": 430,
+          "element": "energy",
+          "description": "Creates Thunderstorm rune — AoE energy damage"
+        },
+        {
+          "name": "Stone Shower Rune",
+          "words": "adori mas tera",
+          "level": 28,
+          "mana": 430,
+          "element": "earth",
+          "description": "Creates Stone Shower rune — AoE earth damage"
+        }
+      ]
+    },
+    "healing": [
+      {
+        "name": "Light Healing",
+        "words": "exura",
+        "level": 8,
+        "mana": 20,
+        "premium": false,
+        "cooldown": 1,
+        "description": "Heals a small amount of health"
+      },
+      {
+        "name": "Intense Healing",
+        "words": "exura gran",
+        "level": 20,
+        "mana": 70,
+        "premium": false,
+        "cooldown": 1,
+        "description": "Heals a moderate amount of health"
+      },
+      {
+        "name": "Ultimate Healing",
+        "words": "exura vita",
+        "level": 30,
+        "mana": 160,
+        "premium": false,
+        "cooldown": 1,
+        "description": "Heals a large amount of health"
+      },
+      {
+        "name": "Heal Friend",
+        "words": "exura sio \"name\"",
+        "level": 18,
+        "mana": 140,
+        "premium": true,
+        "cooldown": 1,
+        "description": "Heals a target party member, amount scales with level"
+      },
+      {
+        "name": "Mass Healing",
+        "words": "exura gran mas res",
+        "level": 36,
+        "mana": 150,
+        "premium": true,
+        "cooldown": 2,
+        "area": "3x3",
+        "description": "Heals all party members in area around caster"
+      }
+    ],
+    "support": [
+      {
+        "name": "Haste",
+        "words": "utani hur",
+        "level": 14,
+        "mana": 60,
+        "premium": false,
+        "cooldown": 2,
+        "duration": 30,
+        "effect": "speed +30%",
+        "description": "Increases speed. Cures paralysis."
+      },
+      {
+        "name": "Strong Haste",
+        "words": "utani gran hur",
+        "level": 20,
+        "mana": 100,
+        "premium": true,
+        "cooldown": 2,
+        "duration": 21,
+        "effect": "speed +70%",
+        "description": "Increases speed significantly"
+      },
+      {
+        "name": "Magic Shield",
+        "words": "utamo vita",
+        "level": 14,
+        "mana": 50,
+        "premium": false,
+        "cooldown": 2,
+        "duration": 180,
+        "description": "Damage reduces Mana instead of HP for 180s"
+      },
+      {
+        "name": "Cancel Magic Shield",
+        "words": "exana vita",
+        "level": 14,
+        "mana": 50,
+        "premium": true,
+        "description": "Removes active Magic Shield"
+      },
+      {
+        "name": "Wild Growth",
+        "words": "exevo grav vita",
+        "level": 27,
+        "mana": 220,
+        "premium": true,
+        "cooldown": 2,
+        "description": "Creates a wild growth wall blocking a tile"
+      },
+      {
+        "name": "Paralyze",
+        "words": "utana ina",
+        "level": 54,
+        "mana": 900,
+        "premium": true,
+        "cooldown": 2,
+        "duration": 6,
+        "description": "Paralyzes a target creature"
+      },
+      {
+        "name": "Invisible",
+        "words": "utana vid",
+        "level": 35,
+        "mana": 440,
+        "premium": false,
+        "cooldown": 2,
+        "duration": 198,
+        "description": "Makes caster invisible (breaks on attack)"
+      },
+      {
+        "name": "Cure Poison",
+        "words": "exana pox",
+        "level": 10,
+        "mana": 30,
+        "premium": false,
+        "cooldown": 6,
+        "description": "Cures poison condition"
+      },
+      {
+        "name": "Cure Burning",
+        "words": "exana flam",
+        "level": 30,
+        "mana": 30,
+        "premium": true,
+        "cooldown": 6,
+        "description": "Cures burning condition"
+      },
+      {
+        "name": "Cure Electrification",
+        "words": "exana vis",
+        "level": 22,
+        "mana": 30,
+        "premium": true,
+        "cooldown": 6,
+        "description": "Cures electrification condition"
+      },
+      {
+        "name": "Cure Bleeding",
+        "words": "exana kor",
+        "level": 45,
+        "mana": 30,
+        "premium": true,
+        "cooldown": 6,
+        "description": "Cures bleeding condition"
+      },
+      {
+        "name": "Levitate",
+        "words": "exani hur up / exani hur down",
+        "level": 12,
+        "mana": 50,
+        "premium": false,
+        "description": "Vertical movement"
+      },
+      {
+        "name": "Magic Wall",
+        "words": "adevo grav tera",
+        "level": 32,
+        "mana": 750,
+        "premium": true,
+        "description": "Creates a magic wall blocking a tile"
+      },
+      {
+        "name": "Light",
+        "words": "utevo lux",
+        "level": 8,
+        "mana": 20,
+        "premium": false,
+        "description": "Light in 3 tile radius"
+      },
+      {
+        "name": "Druid's Avatar",
+        "words": "uteta res",
+        "level": 300,
+        "mana": 800,
+        "premium": true,
+        "cooldown": 7200,
+        "description": "Turns into druid avatar with multiple benefits"
+      }
+    ],
+    "conditions": {
+      "cure_poison": {"words": "exana pox", "level": 10, "mana": 30},
+      "cure_bleeding": {"words": "exana kor", "level": 45, "mana": 30},
+      "cure_burning": {"words": "exana flam", "level": 30, "mana": 30},
+      "cure_electrification": {"words": "exana vis", "level": 22, "mana": 30}
+    }
+  },
+  "combat_rotation": {
+    "_comment": "Recommended ED combat rotation based on level and situation",
+    "low_level_8_30": {
+      "single_target": ["exori tera", "exori frigo"],
+      "healing": ["exura"],
+      "sio": [],
+      "buff": ["utani hur"]
+    },
+    "mid_level_30_55": {
+      "aoe": ["exevo frigo hur", "exevo tera hur"],
+      "single_target": ["exori tera", "exori frigo"],
+      "healing": ["exura gran", "exura sio \"name\""],
+      "mass_heal": ["exura gran mas res"],
+      "buff": ["utani gran hur", "utamo vita"]
+    },
+    "high_level_55_200": {
+      "aoe": ["exevo gran mas tera", "exevo gran mas frigo"],
+      "single_target": ["exori gran tera", "exori gran frigo"],
+      "healing": ["exura vita", "exura sio \"name\""],
+      "mass_heal": ["exura gran mas res"],
+      "support": ["utana ina"],
+      "buff": ["utani gran hur"]
+    },
+    "endgame_200plus": {
+      "aoe": ["exevo gran mas tera", "exevo gran mas frigo"],
+      "single_target": ["exori gran tera", "exori gran frigo"],
+      "healing": ["exura vita", "exura sio \"name\""],
+      "mass_heal": ["exura gran mas res"],
+      "support": ["utana ina", "exevo grav vita"],
+      "buff": ["uteta res", "utani gran hur"]
+    }
+  }
+}

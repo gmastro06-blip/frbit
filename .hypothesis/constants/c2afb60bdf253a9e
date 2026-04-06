@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\src\navigator.py
+# hypothesis_version: 6.151.9
+
+[0.0, 1.0, 100.0, 1000, '.tmp', 'No segments.', 'custom_waypoints', 'error', 'floor', 'floor_count', 'inf', 'loaded_floors', 'non_walkable', 'pct_walkable', 'segment', 'summary', 'total_tiles', 'total_waypoints', 'transition', 'transitions_loaded', 'type', 'utf-8', 'w', 'walk', 'walkable_tiles', '─', '✓', '✗']

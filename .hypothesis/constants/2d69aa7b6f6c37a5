@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\src\models.py
+# hypothesis_version: 6.151.9
+
+[0.0, 30976, 31744, 32768, 34048, 'Coordinate', 'FloorTransition', 'Route', 'Unnamed', 'Waypoint', 'bag', 'checkmark', 'cross', 'crossmark', 'description', 'dollar', 'down', 'entry', 'exclamation', 'exit', 'flag', 'icon', 'kind', 'ladder', 'lock', 'mouth', 'name', 'question', 'red_down', 'red_left', 'red_right', 'red_up', 'rope', 'shovel', 'skull', 'spear', 'star', 'sword', 'up', 'use', 'walk', 'x', 'xMax', 'xMin', 'y', 'yMax', 'yMin', 'z', 'zMax', 'zMin']

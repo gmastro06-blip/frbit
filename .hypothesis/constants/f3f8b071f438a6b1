@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\src\game_data.py
+# hypothesis_version: 6.151.9
+
+[2.0, 100, 200, 999, 999999, 'GameData', '_vocation', 'abilities', 'aoe', 'armor', 'attack', 'behaviour', 'classification', 'combat_rotation', 'condition', 'cooldown', 'damage_taken_pct', 'data', 'description', 'element', 'endgame_200plus', 'exp', 'frontal_aoe', 'healing', 'high_level_70_200', 'hp', 'instant', 'item', 'knight', 'knight_spells.json', 'level', 'locations', 'loot', 'low_level_8_35', 'mana', 'max', 'max_damage', 'melee', 'mid_level_35_70', 'min', 'monsters', 'monsters.json', 'name', 'premium', 'ranged_single', 'run_at_hp', 'runs_at_hp_pct', 'single_target', 'speed', 'spells', 'spells.json', 'support', 'type', 'utf-8', 'wn.gd2', 'words']

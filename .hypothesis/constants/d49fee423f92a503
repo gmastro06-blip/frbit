@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\src\walkability_overlay.py
+# hypothesis_version: 6.151.9
+
+[0.35, 0.5, 0.6, 1.0, 100, 120, 180, 200, 255, 400, '.', '?', 'block', 'diag', 'e', 'idle', 'n', 'ne', 'no position', 'nw', 's', 'se', 'sw', 'w', 'waiting...', 'wn', 'xMin', 'yMin']

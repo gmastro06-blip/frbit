@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\human_input_system\core\pico_hid_controller.py
+# hypothesis_version: 6.151.9
+
+[0.0, 0.05, 0.1, 0.2, 1000.0, '112', '113', '114', '115', '116', '117', '118', '119', '120', '121', '122', '123', '13', '16', '17', '18', '27', '32', '37', '38', '39', '40', '65', '68', '83', '87', '9', 'ACK', 'ALT', 'CTRL', 'DOWN', 'ENTER', 'ESC', 'F1', 'F10', 'F11', 'F12', 'F2', 'F3', 'F4', 'F5', 'F6', 'F7', 'F8', 'F9', 'KEY_PRESS', 'KEY_RELEASE', 'LEFT', 'MOUSE_CLICK', 'MOUSE_MOVE', 'MOUSE_SCROLL', 'OK|', 'PING', 'PONG', 'RELEASE_ALL', 'RIGHT', 'SHIFT', 'SPACE', 'STATUS', 'TAB', 'UP', 'a', 'auto', 'circuitpython', 'cmd_count', 'd', 'ignore', 'pico', 'raspberry', 'rp2350', 's', 'timeout', 'uptime_ms', 'utf-8', 'w', 'wn.ph', '|']

@@ -1,0 +1,4 @@
+# file: C:\Users\gmast\Documents\frbit\review_system\models.py
+# hypothesis_version: 6.151.9
+
+[0.0, 1.0, 5.0, 10.0, 100.0, '**/*.py', 'ReviewResult', 'architecture', 'code_quality', 'critical', 'documentation', 'event_driven', 'high', 'html', 'impact_score', 'info', 'json', 'layered', 'low', 'markdown', 'medium', 'microkernel', 'mvc', 'overall_health_score', 'performance', 'pipeline', 'security', 'standard', 'testing']

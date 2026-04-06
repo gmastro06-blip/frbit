@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\src\trade_manager.py
+# hypothesis_version: 6.151.9
+
+[0.03, 0.05, 0.06, 0.1, 0.12, 0.15, 0.2, 0.5, 0.62, 0.8, 1.2, 1.25, 5.0, -120, 100, 120, 150, 179, 190, 255, 256, 257, 280, 305, 320, 350, 400, 460, 500, 522, 610, 620, 658, 693, 700, 730, 736, 760, 850, 900, 943, 1015, 1080, 1087, 1920, 65535, '(\\d[\\d,\\.]*)', '*.bmp', '*.jpeg', '*.jpg', '*.png', ',', '.', '.tmp', 'TradeConfig', 'buy', 'buy_btn_pos', 'buy_tab_pos', 'cancel_btn_pos', 'down', 'en', 'first_item_pos', 'item_list_roi', 'left', 'ok_btn_pos', 'price_unit_roi', 'qty_field_roi', 'scroll_pos', 'search_field_pos', 'sell', 'sell_btn_pos', 'sell_tab_pos', 'trade', 'trade_items', 'utf-8', 'w', 'window_roi', 'wn']

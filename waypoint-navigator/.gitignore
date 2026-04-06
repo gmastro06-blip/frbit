@@ -1,0 +1,36 @@
+# Secrets — never commit
+.env
+.env.local
+*.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Test & coverage artifacts
+.pytest_cache/
+.mypy_cache/
+output/coverage_html/
+output/session_*.json
+.coverage
+coverage.xml
+
+# IDE
+.vscode/
+.idea/
+
+# Runtime output
+logs/
+output/
+
+# Debug screenshots & calibration captures
+captures/
+
+# Cache (re-generated at runtime)
+cache/floor-*.png

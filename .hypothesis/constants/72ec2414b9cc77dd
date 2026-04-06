@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\human_input_system\config\parser.py
+# hypothesis_version: 6.151.9
+
+[0.0, 0.01, 0.3, 0.5, 1.0, 2.0, 5.0, 10.0, 30.0, 40.0, 50.0, 100.0, 200.0, 500.0, './logs', '[ConfigParser] %s', 'active_profile', 'arduino', 'behavior', 'default', 'enable_humanization', 'error_probabilities', 'error_rate_base', 'log_directory', 'micro_pause_mean', 'micro_pause_std', 'mouse', 'name', 'profiles', 'r', 'reaction_time_mean', 'reaction_time_std', 'system', 'timing', 'utf-8']

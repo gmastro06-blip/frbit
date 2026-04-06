@@ -1,0 +1,33 @@
+{
+  "viewport_roi": [
+    230,
+    60,
+    960,
+    540
+  ],
+  "tile_size_px": 32,
+  "context_menu_offset_y": 18,
+  "container_roi": [
+    1610,
+    430,
+    220,
+    205
+  ],
+  "loot_whitelist": [],
+  "loot_mode": "quick",
+  "max_range_tiles": 3,
+  "loot_delay": 1.5,
+  "container_settle": 0.6,
+  "corpse_confidence": 0.6,
+  "item_confidence": 0.6,
+  "confidence": 0.6,
+  "slot_brightness_threshold": 8.0,
+  "container_cols": 4,
+  "slot_size_px": 34,
+  "ref_width": 1920,
+  "ref_height": 1009,
+  "quick_loot_menu_offset_y": 36,
+  "use_hotkey_quick_loot": true,
+  "stow_all_menu_offset_y": 18,
+  "stow_all_container_pos": []
+}

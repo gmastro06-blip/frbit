@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\src\depot_manager.py
+# hypothesis_version: 6.151.9
+
+[0.0, 0.02, 0.15, 0.3, 0.4, 0.5, 0.6, 0.8, 1.2, 1.25, 2.0, 3.0, 100, 150, 220, 255, 270, 280, 320, 480, 640, 820, 834, 1080, 1920, 32248, 32258, '*.png', '.tmp', 'DepotConfig', 'cycle_count', 'deposit all', 'depot_config.json', 'has_frame_getter', 'has_log_callback', 'hi', 'items_deposited', 'items_per_cycle', 'loot_all', 'loot_items', 'shift_click', 'type_text', 'utf-8', 'w', 'withdraw all', 'yes']

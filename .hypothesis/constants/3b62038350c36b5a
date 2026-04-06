@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\human_input_system\core\arduino_hid_controller.py
+# hypothesis_version: 6.151.9
+
+[0.1, 'ACK', 'KEY_PRESS', 'KEY_RELEASE', 'MOUSE_CLICK', 'MOUSE_MOVE', 'PING', 'PONG', 'auto']

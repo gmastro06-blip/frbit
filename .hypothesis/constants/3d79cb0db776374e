@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\src\spawn_manager.py
+# hypothesis_version: 6.151.9
+
+[0.0, 60.0, 300.0, 'cooldown', 'current_spawn', 'dangerous', 'e27', 'e28', 'emit', 'free', 'from', 'name', 'occupied', 'priority', 'spawn_status', 'switch_count', 'to', 'unknown', 'wn.sm']

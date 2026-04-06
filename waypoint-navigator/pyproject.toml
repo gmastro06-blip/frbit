@@ -1,0 +1,133 @@
+[build-system]
+requires      = ["hatchling"]
+build-backend = "hatchling.build"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Project metadata
+# ─────────────────────────────────────────────────────────────────────────────
+[project]
+name        = "waypoint-navigator"
+version     = "0.1.0"
+description = "BattlEye-safe Tibia bot — A* pathfinding, autohealer, looter and depot via OBS screen-capture"
+readme      = "README.md"
+requires-python = ">=3.12"
+license     = { text = "MIT" }
+
+authors = [
+    { name = "gmast" },
+]
+
+keywords = ["tibia", "bot", "pathfinding", "astar", "waypoint", "automation"]
+
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Win32 (MS Windows)",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: Microsoft :: Windows",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Games/Entertainment",
+]
+
+# Core runtime dependencies (no EasyOCR — it's large and optional)
+dependencies = [
+    "numpy>=1.24",
+    "Pillow>=10.0",
+    "requests>=2.31",
+    "matplotlib>=3.7",
+    "opencv-python>=4.8",
+    "mss>=9.0",
+    "obsws-python>=1.0",
+    "websockets>=12.0",
+    "psutil>=5.9",
+    "PyYAML>=6.0",
+    "pyserial>=3.5",
+]
+
+[project.optional-dependencies]
+# EasyOCR for CharacterDetector (downloads ~300 MB of models on first use)
+ocr = ["easyocr>=1.7"]
+
+# Optional capture / input backends
+capture = [
+    "dxcam>=0.0.5",
+    "winsdk>=1.0.0b10",
+]
+
+# Interception driver-based input
+interception = ["interception-python>=1.13"]
+
+# Examples (pygame UI, gif recording)
+examples = [
+    "pygame>=2.6",
+    "imageio>=2.37",
+]
+
+# Review system CLI
+review = [
+    "pydantic>=2.0",
+    "typer>=0.9",
+    "rich>=13.0",
+]
+
+# Development / testing
+dev = [
+    "pytest>=8.0",
+    "pytest-timeout>=2.3",
+    "pytest-cov>=5.0",
+    "mypy>=1.9",
+    "pyright>=1.1",
+    "types-requests>=2.31",
+    "types-psutil>=5.9",
+]
+
+# All extras together
+full = [
+    "waypoint-navigator[ocr,capture,interception,examples,review,dev]",
+]
+
+[project.scripts]
+# After `pip install .` you can run: waypoint-navigator run --help
+waypoint-navigator = "main:main"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Build configuration
+# ─────────────────────────────────────────────────────────────────────────────
+[tool.hatch.build.targets.wheel]
+packages = ["src"]
+include  = ["main.py", "routes/*.json", "cache/markers.json"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "src/",
+    "tests/",
+    "routes/",
+    "examples/",
+    "main.py",
+    "README.md",
+    "requirements.txt",
+    "detector_config.json",
+]
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Mypy — mirrors mypy.ini at the workspace root
+# ─────────────────────────────────────────────────────────────────────────────
+[tool.mypy]
+python_version         = "3.12"
+mypy_path              = "."
+namespace_packages     = true
+explicit_package_bases = true
+check_untyped_defs     = true
+ignore_missing_imports = true
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Ruff (linter — optional, not installed by default)
+# ─────────────────────────────────────────────────────────────────────────────
+[tool.ruff]
+target-version = "py312"
+line-length    = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "UP"]
+ignore = ["E501"]   # líneas largas — cubierto por comentarios en el código

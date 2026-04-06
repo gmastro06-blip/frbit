@@ -1,0 +1,21 @@
+{
+  "_comment": "Optimizado 2026-03-27 — emergency más temprano, reacción más rápida.",
+  "hp_threshold_pct": 75,
+  "hp_emergency_pct": 40,
+  "mp_threshold_pct": 30,
+  "heal_min_mp_pct": 5,
+  "heal_hotkey_vk": 112,
+  "mana_hotkey_vk": 113,
+  "emergency_hotkey_vk": 114,
+  "heal_cooldown": 1.0,
+  "mana_cooldown": 1.2,
+  "emergency_cooldown": 0.5,
+  "cooldown_jitter": 0.10,
+  "utamo_hotkey_vk": 0,
+  "utamo_min_mp_pct": 95,
+  "utamo_cooldown": 22.0,
+  "haste_hotkey_vk": 0,
+  "haste_cooldown": 16.0,
+  "check_interval": 0.08,
+  "hpmp_config_path": ""
+}

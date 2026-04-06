@@ -1,0 +1,20 @@
+{
+  "depot_chest_coord": [32352, 32226, 7],
+  "deposit_mode": "stow_all",
+  "stow_all_menu_entry_index": 1,
+  "stow_all_item_entry_index": -1,
+  "stow_container_index": 1,
+  "stow_panel_y_start": 380,
+  "container_slot_y_offset": 17,
+  "open_wait": 1.0,
+  "close_containers_vk": 0,
+  "context_menu_open_offset_y": 20,
+  "container_open_timeout": 3.0,
+  "max_items_per_cycle": 20,
+  "viewport_center": [562, 496],
+  "tile_size_px": 75,
+  "backpack_slot_origin": [1771, 579],
+  "backpack_slot_cols": 4,
+  "backpack_slot_rows": 8,
+  "backpack_slot_spacing": 37
+}

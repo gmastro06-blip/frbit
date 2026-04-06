@@ -1,0 +1,15 @@
+{
+  "roi": [
+    1740,
+    27,
+    175,
+    127
+  ],
+  "obs_source": "",
+  "obs_cam_index": 0,
+  "obs_ws_host": "localhost",
+  "obs_ws_port": 4455,
+  "obs_ws_password": "",
+  "ocr_confidence": 0.4,
+  "sample_interval": 0.5
+}

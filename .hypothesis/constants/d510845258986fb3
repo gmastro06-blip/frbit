@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\src\config_paths.py
+# hypothesis_version: 6.151.9
+
+['_MEIPASS', 'cache', 'cc.json', 'cc_d.json', 'cc_p.json', 'cc_s.json', 'combat_config.json', 'data', 'dc.json', 'detector_config.json', 'frozen', 'hm.json', 'hpmp_config.json', 'm', 'maps', 'mc.json', 'minimap_config.json', 'r', 'routes', 't', 'tc.json', 'templates', 'trade_config.json']

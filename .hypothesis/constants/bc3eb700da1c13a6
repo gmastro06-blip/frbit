@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\src\reconnect_handler.py
+# hypothesis_version: 6.151.9
+
+[0.6, 0.7, 0.8, 1.0, 1.25, 5.0, 10.0, 30.0, 60.0, 120.0, 300.0, '[Q] Handler started', '[Q] tick error: %s', '_login_screen_streak', 'attempt', 'attempts', 'cache', 'consecutive_failures', 'count', 'disconnects', 'e21', 'e22', 'e23', 'e24', 'login_screen.png', 'login_timeouts', 'pathlib', 'reconnects', 'running', 'templates', 'total_attempts', 'wn.rh']

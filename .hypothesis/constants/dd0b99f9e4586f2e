@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\src\dashboard_server.py
+# hypothesis_version: 6.151.9
+
+[0.0, 0.7, 0.8, 1.3, 1.4, 2.0, 100, 128, 200, 401, 404, 1024, 3600, 4001, 8080, 8765, 32241, 32369, 49152, 65000, '\nStopped.', '--port', '--ws-port', '/', '/health', '/index.html', '127.0.0.1', 'Authorization', 'Bearer ', 'Content-Length', 'Content-Type', 'HTTP port', 'HTTP: ', 'Unauthorized', 'WebSocket port', '__main__', 'application/json', 'clients', 'dashboard.html', 'data', 'error', 'event', 'events', 'heal_fired', 'init', 'logs', 'loot_events', 'mana_fired', 'memory_mb', 'ok', 'ping', 'pong', 'position', 'routes_completed', 'src', 'stats', 'status', 'subsystems', 'threads', 'token', 'ts', 'type', 'update', 'uptime_s', 'uptime_seconds', 'utf-8', 'wn.ds', 'x', 'y', 'z']

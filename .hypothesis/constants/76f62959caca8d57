@@ -1,0 +1,4 @@
+# file: C:\Users\gmast\Documents\frbit\review_system\architecture_analyzer.py
+# hypothesis_version: 6.151.9
+
+[0.5, 1.0, 500, 'EventBus', 'controller', 'dao', 'data', 'emit', 'event_bus', 'extension', 'filter', 'gui', 'handler', 'hook', 'main', 'model', 'models', 'pipe', 'pipeline', 'plugin', 'publish', 'register_plugin', 'replace', 'repository', 'service', 'stage', 'subscribe', 'template', 'transform', 'utf-8', 'utils', 'view']

@@ -1,0 +1,4 @@
+# file: c:\Users\gmast\Documents\frbit\waypoint-navigator\src\calibrator.py
+# hypothesis_version: 6.151.9
+
+[0.0, 0.4, 0.5, 1.0, 100, 106, 109, 134, 162, 180, 220, 229, 255, 356, 370, 444, 720, 1080, 1280, 1500, 1569, 1628, 1920, ',', '--mode', '--obs-source', '--preset', '--roi', '--source', '--window', '1920x1080', 'Barra HP (roja)', 'Barra MP (azul)', 'Panel Battle List', 'Tibia', 'Widget del Minimapa', '__main__', 'actual', 'all', 'battle-list', 'coord', 'debug_roi_coord.png', 'hp', 'minimap', 'mp', 'mss', 'obs-ws', 'q', 'r', 's', 'screen', 'virtual-cam', 'wgc']

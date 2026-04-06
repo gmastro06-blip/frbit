@@ -1,0 +1,72 @@
+{
+  "_comment": "RP (Paladin) combat config — example for holy/physical hunting @ 1920x1080",
+  "battle_list_roi": [1568, 175, 162, 345],
+  "templates_dir": "cache/templates",
+  "attack_vk": 0,
+  "spells": [
+    {
+      "vk": 113,
+      "min_mp": 25,
+      "cooldown": 2.0,
+      "label": "exori con",
+      "type": "single_target",
+      "_comment": "F2 = Ethereal Spear (25 mana, 2s cd) — primary filler"
+    },
+    {
+      "vk": 114,
+      "min_mp": 20,
+      "cooldown": 2.0,
+      "label": "exori san",
+      "type": "single_target",
+      "_comment": "F3 = Divine Missile (20 mana, 2s cd) — holy damage filler"
+    },
+    {
+      "vk": 115,
+      "min_mp": 160,
+      "cooldown": 4.0,
+      "label": "exevo mas san",
+      "type": "aoe",
+      "_comment": "F4 = Divine Caldera (160 mana, 4s cd) — AoE holy"
+    },
+    {
+      "vk": 116,
+      "min_mp": 55,
+      "cooldown": 8.0,
+      "label": "exori gran con",
+      "type": "single_target",
+      "_comment": "F5 = Strong Ethereal Spear (55 mana, 8s cd) — strong single target"
+    }
+  ],
+  "healing": {
+    "_comment": "Paladin healing config — RP uses exura ico / exura gran ico + HoT",
+    "heal_spell_vk": 112,
+    "heal_spell_label": "exura ico",
+    "heal_spell_mana": 40,
+    "heal_trigger_hp_pct": 70,
+    "strong_heal_vk": 111,
+    "strong_heal_label": "exura gran ico",
+    "strong_heal_mana": 200,
+    "strong_heal_trigger_hp_pct": 45,
+    "hot_vk": 110,
+    "hot_label": "utura gran",
+    "hot_mana": 165,
+    "_note": "RP should always have utura gran active when hunting"
+  },
+  "hp_flee_pct": 30,
+  "flee_vk": 117,
+  "check_interval": 0.30,
+  "confidence": 0.65,
+  "click_to_attack_delay": 0.12,
+  "reselect_interval": 3.0,
+  "skip_top": 0,
+  "slot_height": 22,
+  "ref_width": 1920,
+  "ref_height": 1080,
+  "ocr_detection": false,
+  "ocr_confidence": 0.3,
+  "monster_priority": [],
+  "aoe_mob_threshold": 3,
+  "flee_mob_count": 4,
+  "max_expected_mobs": 6,
+  "lure_action": "warn"
+}
